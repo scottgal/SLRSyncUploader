@@ -1,0 +1,7 @@
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Contracts\Bin\Debug\mpost.SilverlightMultiFileUpload.Contracts.dll
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Contracts\Bin\Debug\mpost.SilverlightMultiFileUpload.Contracts.pdb
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Contracts\Bin\Debug\mpost.SilverlightMultiFileUpload.Utils.dll
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Contracts\Bin\Debug\mpost.SilverlightMultiFileUpload.Utils.pdb
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Contracts\obj\Debug\ResolveAssemblyReference.cache
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Contracts\obj\Debug\mpost.SilverlightMultiFileUpload.Contracts.dll
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Contracts\obj\Debug\mpost.SilverlightMultiFileUpload.Contracts.pdb

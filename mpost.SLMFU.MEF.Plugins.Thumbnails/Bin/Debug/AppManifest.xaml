@@ -1,0 +1,7 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="mpost.SLMFU.MEF.Plugins.Thumbnails" EntryPointType="mpost.SLMFU.MEF.Plugins.Thumbnails.App" RuntimeVersion="4.0.50826.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="mpost.SLMFU.MEF.Plugins.Thumbnails" Source="mpost.SLMFU.MEF.Plugins.Thumbnails.dll" />
+    <AssemblyPart x:Name="mpost.SilverlightMultiFileUpload.Contracts" Source="mpost.SilverlightMultiFileUpload.Contracts.dll" />
+    <AssemblyPart x:Name="mpost.SilverlightMultiFileUpload.Utils" Source="mpost.SilverlightMultiFileUpload.Utils.dll" />
+  </Deployment.Parts>
+</Deployment>

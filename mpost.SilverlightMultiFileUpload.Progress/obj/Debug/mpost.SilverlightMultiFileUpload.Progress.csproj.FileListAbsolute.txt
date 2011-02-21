@@ -1,0 +1,12 @@
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Progress\Bin\Debug\mpost.SilverlightMultiFileUpload.Progress.dll
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Progress\Bin\Debug\mpost.SilverlightMultiFileUpload.Progress.pdb
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Progress\Bin\Debug\AppManifest.xaml
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Progress\Bin\Debug\mpost.SilverlightMultiFileUpload.Progress.xap
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Progress\Bin\Debug\mpost.SilverlightMultiFileUpload.ProgressTestPage.html
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Progress\obj\Debug\ResolveAssemblyReference.cache
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Progress\obj\Debug\App.g.i.cs
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Progress\obj\Debug\MainPage.g.i.cs
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Progress\obj\Debug\mpost.SilverlightMultiFileUpload.Progress.g.resources
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Progress\obj\Debug\mpost.SilverlightMultiFileUpload.Progress.dll
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Progress\obj\Debug\mpost.SilverlightMultiFileUpload.Progress.pdb
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Progress\obj\Debug\XapCacheFile.xml

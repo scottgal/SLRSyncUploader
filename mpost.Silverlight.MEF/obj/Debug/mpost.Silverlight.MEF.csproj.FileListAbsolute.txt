@@ -1,0 +1,5 @@
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.Silverlight.MEF\Bin\Debug\mpost.Silverlight.MEF.dll
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.Silverlight.MEF\Bin\Debug\mpost.Silverlight.MEF.pdb
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.Silverlight.MEF\obj\Debug\ResolveAssemblyReference.cache
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.Silverlight.MEF\obj\Debug\mpost.Silverlight.MEF.dll
+D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.Silverlight.MEF\obj\Debug\mpost.Silverlight.MEF.pdb
