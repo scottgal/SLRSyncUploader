@@ -222,8 +222,8 @@ namespace NetSync
             try
             {
                 var fileName = Path.Combine(Environment.SystemDirectory, Daemon.Config.GetSecretsFile(moduleNumber));
-                var secret = null;
-                using (var streamReader = new System.IO.StreamReader(fileName))
+                var secret = string.Empty;
+                using (var streamReader = new StreamReader(fileName))
                 {
                     while (true)
                     {
