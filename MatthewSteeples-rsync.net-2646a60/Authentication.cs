@@ -23,7 +23,7 @@ namespace NetSync
 {
     class Authentication
     {
-        public static string password_file = String.Empty;
+        public static string PasswordFile = String.Empty;
 
         /// <summary>
         /// Encodes message, treated as ASCII, into base64 string
@@ -32,8 +32,9 @@ namespace NetSync
         /// <returns></returns>
         public static string Base64Encode(string message)
         {
+           
             Encoding asciiEncoding = Encoding.ASCII;
-            byte[] byteArray = new byte[asciiEncoding.GetByteCount(message)];
+            var byteArray = new byte[asciiEncoding.GetByteCount(message)];
             byteArray = asciiEncoding.GetBytes(message);
             return Convert.ToBase64String(byteArray);
         }
@@ -47,10 +48,10 @@ namespace NetSync
         public static string GenerateChallenge(string addr, Options opt)
         {
             string challenge = String.Empty;
-            byte[] input = new byte[32];
-            DateTime timeVector = DateTime.Now;
+            var input = new byte[32];
+            var timeVector = DateTime.Now;
 
-            for (int i = 0; i < addr.Length; i++)
+            for (var i = 0; i < addr.Length; i++)
             {
                 input[i] = Convert.ToByte(addr[i]);
             }
@@ -75,7 +76,7 @@ namespace NetSync
         /// <returns></returns>
         public static string GenerateHash(string indata, string challenge, Options options)
         {
-            Sum sum = new Sum(options);
+            var sum = new Sum(options);
 
             sum.Init(0);
             sum.Update(Encoding.ASCII.GetBytes(indata), 0, indata.Length);
@@ -101,11 +102,11 @@ namespace NetSync
             }
             if (string.IsNullOrEmpty(pass))
             {
-                pass = GetEmptyPassword(password_file);
+                pass = GetEmptyPassword(PasswordFile);
             }
             if (pass.Equals(String.Empty))
             {
-                pass = System.Environment.GetEnvironmentVariable("RSYNC_PASSWORD");
+                pass = Environment.GetEnvironmentVariable("RSYNC_PASSWORD");
             }
             if (string.IsNullOrEmpty(pass))
             {
@@ -150,15 +151,14 @@ namespace NetSync
             string users = Daemon.Config.GetAuthUsers(moduleNumber).Trim();
             //string challenge;
             string b64Challenge;
-            IOStream ioStream = clientInfo.IoStream;
+            var ioStream = clientInfo.IoStream;
             string line;
 
-            string user = String.Empty;
-            string secret = String.Empty;
-            string pass = String.Empty;
-            string pass2 = String.Empty;
-            string[] listUsers;
-            string token = String.Empty;
+            var user = String.Empty;
+            var secret = String.Empty;
+            var pass = String.Empty;
+            var pass2 = String.Empty;
+            var token = String.Empty;
 
             /* if no auth list then allow anyone in! */
             if (string.IsNullOrEmpty(users))
@@ -180,9 +180,9 @@ namespace NetSync
             {
                 return false;
             }
-            listUsers = users.Split(',');
+            var listUsers = users.Split(',');
 
-            for (int i = 0; i < listUsers.Length; i++)
+            for (var i = 0; i < listUsers.Length; i++)
             {
                 token = listUsers[i];
                 if (user.Equals(token))
@@ -219,14 +219,10 @@ namespace NetSync
         /// <returns></returns>
         static string GetSecret(int moduleNumber, string user)
         {
-            //if (fname == null || fname.CompareTo(String.Empty) == 0) //@fixed Why check if next there is a try/catch and also Path.combine won't return null or emprty string
-            //{
-            //    return null;
-            //}
             try
             {
-                string fileName = Path.Combine(Environment.SystemDirectory, Daemon.Config.GetSecretsFile(moduleNumber));
-                string secret = null;
+                var fileName = Path.Combine(Environment.SystemDirectory, Daemon.Config.GetSecretsFile(moduleNumber));
+                var secret = null;
                 using (var streamReader = new System.IO.StreamReader(fileName))
                 {
                     while (true)
