@@ -12,7 +12,16 @@ namespace HashEngine
         {
             _blockLength = 1024 ;
             _engineMode = EngineMode.Parallel;
+            _degreeOfParalellism = Environment.ProcessorCount;
+        }
 
+        private int _degreeOfParalellism;
+
+        public int DegreeOfParalleism
+        {
+            get { return _degreeOfParalellism; }
+
+            set { _degreeOfParalellism = value; }
         }
 
         private int _blockLength;

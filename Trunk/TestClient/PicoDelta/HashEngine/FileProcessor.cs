@@ -14,7 +14,38 @@ namespace HashEngine
     {
 
 
-        public static ConcurrentBag<FileChunk> GetNonMatchingBlocksForFile(string filePath, Config config)
+        public static ConcurrentBag<FileChunk> GetNonMatchingBlocksForFile(ConcurrentDictionary<long, FileHash> remoteHashes, string filePath, Config config)
+        {
+          
+            var fileInfo = new FileInfo(filePath);
+
+            var fileChunkSize =Convert.ToInt64(fileInfo.Length/config.DegreeOfParalleism);   
+
+
+            var taskArray = new List<Task>(config.DegreeOfParalleism);
+
+
+
+
+
+            if (taskArray.Count <= config.DegreeOfParalleism)
+            {
+                taskArray.Add(Task.Factory.StartNew(() => ScanFileChunk(remoteHashes, filePath,  config))
+                                  .ContinueWith(
+                                      outHash => resultDictionary.TryAdd(outHash.Result.WeakHash, outHash.Result)));
+
+            }
+            else
+            {
+                complete = Task.WaitAny(taskArray.ToArray());
+                taskArray.RemoveAt(complete);
+            }
+
+            return null;
+        }
+
+        
+        public ConcurrentBag<FileChunk> ScanFileChunk(ConcurrentDictionary<long, FileHash> remoteHashes, string filePath, long startOffset, long endOffset, Config config)
         {
             var windowBuffer = new byte[config.BlockLength];
             var windowChecksum = new Adler32();
@@ -51,12 +82,6 @@ namespace HashEngine
 
             return null;
         }
-
-        
-        public ConcurrentBag<FileChunk> ScanChunk(string filePath, long startOffset, long endOffset, Config config)
-        {
-            return null
-        }
         public static ConcurrentDictionary<long, FileHash> GetHashesForFile(string filePath, Config config)
         {
 
@@ -77,7 +102,7 @@ namespace HashEngine
             var bytesToRead = config.BlockLength;
             var buffer = new byte[bytesToRead];
             int complete = 0;
-            var procCount = Environment.ProcessorCount * 15;
+            var procCount = config.DegreeOfParalleism * 15;
             var taskArray = new List<Task>(procCount);
             using (var file = File.OpenRead(filePath))
             {
