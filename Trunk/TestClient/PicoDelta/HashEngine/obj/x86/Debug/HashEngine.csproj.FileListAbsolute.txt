@@ -1,0 +1,10 @@
+c:\users\scott_galloway\documents\visual studio 2010\Projects\PicoDelta\HashEngine\bin\Debug\HashEngine.dll
+c:\users\scott_galloway\documents\visual studio 2010\Projects\PicoDelta\HashEngine\bin\Debug\HashEngine.pdb
+c:\users\scott_galloway\documents\visual studio 2010\Projects\PicoDelta\HashEngine\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\scott_galloway\documents\visual studio 2010\Projects\PicoDelta\HashEngine\obj\x86\Debug\HashEngine.dll
+c:\users\scott_galloway\documents\visual studio 2010\Projects\PicoDelta\HashEngine\obj\x86\Debug\HashEngine.pdb
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\HashEngine\bin\Debug\HashEngine.dll
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\HashEngine\bin\Debug\HashEngine.pdb
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\HashEngine\obj\x86\Debug\ResolveAssemblyReference.cache
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\HashEngine\obj\x86\Debug\HashEngine.dll
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\HashEngine\obj\x86\Debug\HashEngine.pdb

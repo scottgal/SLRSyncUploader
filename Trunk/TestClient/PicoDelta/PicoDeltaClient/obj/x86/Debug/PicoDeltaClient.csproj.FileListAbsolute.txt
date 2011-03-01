@@ -1,0 +1,14 @@
+c:\users\scott_galloway\documents\visual studio 2010\Projects\PicoDelta\PicoDeltaClient\bin\Debug\PicoDeltaClient.exe
+c:\users\scott_galloway\documents\visual studio 2010\Projects\PicoDelta\PicoDeltaClient\bin\Debug\PicoDeltaClient.pdb
+c:\users\scott_galloway\documents\visual studio 2010\Projects\PicoDelta\PicoDeltaClient\bin\Debug\HashEngine.dll
+c:\users\scott_galloway\documents\visual studio 2010\Projects\PicoDelta\PicoDeltaClient\bin\Debug\HashEngine.pdb
+c:\users\scott_galloway\documents\visual studio 2010\Projects\PicoDelta\PicoDeltaClient\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\scott_galloway\documents\visual studio 2010\Projects\PicoDelta\PicoDeltaClient\obj\x86\Debug\PicoDeltaClient.exe
+c:\users\scott_galloway\documents\visual studio 2010\Projects\PicoDelta\PicoDeltaClient\obj\x86\Debug\PicoDeltaClient.pdb
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaClient\obj\x86\Debug\PicoDeltaClient.exe
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaClient\obj\x86\Debug\PicoDeltaClient.pdb
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaClient\bin\Debug\PicoDeltaClient.exe
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaClient\bin\Debug\PicoDeltaClient.pdb
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaClient\bin\Debug\HashEngine.dll
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaClient\bin\Debug\HashEngine.pdb
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaClient\obj\x86\Debug\ResolveAssemblyReference.cache

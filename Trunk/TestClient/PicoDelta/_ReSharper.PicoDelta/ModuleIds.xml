@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="14AE46F8-E4D1-4BB3-83E9-80D4737DA8C5" ModuleId="PicoDeltaClient" />
+  <Module PersistentId="41477258-8867-4D34-8E9F-92FC4EFA9055" ModuleId="HashEngine" />
+  <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
+</Modules>

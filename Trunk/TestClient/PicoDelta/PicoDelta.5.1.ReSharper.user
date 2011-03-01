@@ -1,0 +1,234 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Adler32.cs" caret="2668" fromTop="15" />
+      <File id="14AE46F8-E4D1-4BB3-83E9-80D4737DA8C5/f:Program.cs" caret="647" fromTop="25" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Config.cs" caret="643" fromTop="29" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:EngineMode.cs" caret="0" fromTop="0" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Murmurhash2.cs" caret="2047" fromTop="22" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="422" fromTop="23" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileHash.cs" caret="404" fromTop="24" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="1360" fromTop="45" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="62" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="37" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="26" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="16" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileHash.cs" caret="170" fromTop="9" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="35" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="42" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3944" fromTop="29" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="24" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="4001" fromTop="36" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="173" fromTop="6" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="479" fromTop="19" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="134" fromTop="7" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="388" fromTop="21" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="263" fromTop="13" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3697" fromTop="54" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3317" fromTop="22" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3269" fromTop="17" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3497" fromTop="25" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3813" fromTop="34" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3565" fromTop="33" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="2008" fromTop="29" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="1762" fromTop="25" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="1491" fromTop="20" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="2811" fromTop="54" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="2201" fromTop="37" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="2406" fromTop="47" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3166" fromTop="46" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="539" fromTop="19" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="616" fromTop="24" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.9\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="18" />
+      <Item value="static" priority="8" />
+      <Item value="void" priority="0" />
+      <Item value="int" priority="11" />
+      <Item value="byte" priority="13" />
+      <Item value="AppDomainSetup`0" priority="2" />
+      <Item value="ParallelEnumerable`0" priority="0" />
+      <Item value="bool" priority="2" />
+      <Item value="Config`0" priority="3" />
+      <Item value="private" priority="6" />
+      <Item value="return" priority="7" />
+      <Item value="_blockLength" priority="2" />
+      <Item value="value" priority="0" />
+      <Item value="Encoder`0" priority="0" />
+      <Item value="_engineMode" priority="2" />
+      <Item value="Parallel" priority="0" />
+      <Item value="var" priority="23" />
+      <Item value="FileHash`0" priority="7" />
+      <Item value="new" priority="17" />
+      <Item value="FileInfo`0" priority="0" />
+      <Item value="if" priority="6" />
+      <Item value="File`0" priority="3" />
+      <Item value="null" priority="1" />
+      <Item value="throw" priority="0" />
+      <Item value="NullReferenceException" priority="0" />
+      <Item value="fileInfo" priority="0" />
+      <Item value="fileLength" priority="4" />
+      <Item value="config" priority="3" />
+      <Item value="localBlockLength" priority="2" />
+      <Item value="using" priority="3" />
+      <Item value="file" priority="2" />
+      <Item value="List" priority="0" />
+      <Item value="while" priority="0" />
+      <Item value="currentFilePosition" priority="8" />
+      <Item value="bytesToRead" priority="3" />
+      <Item value="Length" priority="2" />
+      <Item value="Offset" priority="1" />
+      <Item value="ref" priority="2" />
+      <Item value="CalculateHashes`0" priority="0" />
+      <Item value="fileHash" priority="3" />
+      <Item value="Task`0" priority="8" />
+      <Item value="taskA" priority="1" />
+      <Item value="System" priority="2" />
+      <Item value="Collections" priority="1" />
+      <Item value="Concurrent" priority="0" />
+      <Item value="Dictionary" priority="0" />
+      <Item value="outHash" priority="1" />
+      <Item value="Result" priority="1" />
+      <Item value="resultDictionary" priority="0" />
+      <Item value="Adler32`0" priority="5" />
+      <Item value="adlerHash" priority="2" />
+      <Item value="offset" priority="3" />
+      <Item value="buffer" priority="3" />
+      <Item value="Security" priority="0" />
+      <Item value="Cryptography" priority="0" />
+      <Item value="MD5CryptoServiceProvider`0" priority="1" />
+      <Item value="md5" priority="2" />
+      <Item value="FileHash" priority="0" />
+      <Item value="length" priority="1" />
+      <Item value="WeakHash" priority="0" />
+      <Item value="weakHash" priority="1" />
+      <Item value="StrongHash" priority="0" />
+      <Item value="strongHash" priority="1" />
+      <Item value="Console`0" priority="2" />
+      <Item value="foreach" priority="1" />
+      <Item value="in" priority="1" />
+      <Item value="outDict" priority="0" />
+      <Item value="entry" priority="3" />
+      <Item value="Environment`0" priority="0" />
+      <Item value="taskArray" priority="16" />
+      <Item value="currentTasks" priority="1" />
+      <Item value="false" priority="1" />
+      <Item value="procCount" priority="1" />
+      <Item value="TaskFactory`0" priority="0" />
+      <Item value="task" priority="0" />
+      <Item value="RanToCompletion" priority="0" />
+      <Item value="else" priority="1" />
+      <Item value="ValueType`0" priority="0" />
+      <Item value="currArray" priority="0" />
+      <Item value="ConcurrentBag" priority="1" />
+      <Item value="lock" priority="0" />
+      <Item value="break" priority="0" />
+      <Item value="string" priority="0" />
+      <Item value="Adler32" priority="0" />
+      <Item value="MD5CryptoServiceProvider" priority="1" />
+      <Item value="_md5Internal" priority="5" />
+      <Item value="MD5`0" priority="0" />
+      <Item value="long" priority="3" />
+      <Item value="adler32" priority="2" />
+      <Item value="CalculateWeakHash`0" priority="0" />
+      <Item value="CalculateStrongHash`0" priority="0" />
+      <Item value="windowBuffer" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="Exists`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileInfo">
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HashEngine.Config">
+      <Item value="BlockLength" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileStream">
+      <Item value="Read`0" priority="0" />
+      <Item value="Position" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Tasks.Task`1">
+      <Item value="ContinueWith`1" priority="1" />
+      <Item value="Result" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Concurrent.ConcurrentDictionary`2">
+      <Item value="AddOrUpdate`0" priority="0" />
+      <Item value="TryAdd`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HashEngine.FileHash">
+      <Item value="WeakHash" priority="2" />
+      <Item value="StrongHash" priority="0" />
+      <Item value="Offset" priority="0" />
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HashEngine.Adler32">
+      <Item value="Update`0" priority="2" />
+      <Item value="Value" priority="0" />
+      <Item value="Reset`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.Cryptography.MD5CryptoServiceProvider">
+      <Item value="Hash" priority="0" />
+      <Item value="ComputeHash`0" priority="0" />
+      <Item value="CanReuseTransform" priority="0" />
+      <Item value="Initialize`0" priority="1" />
+      <Item value="Clear`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@HashEngine.FileProcessor">
+      <Item value="GetHashesForFile`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="ReadKey`0" priority="0" />
+      <Item value="WriteLine`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Key" priority="0" />
+      <Item value="Value" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment">
+      <Item value="ProcessorCount" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Tasks.TaskFactory">
+      <Item value="ContinueWhenAny`1" priority="0" />
+      <Item value="StartNew`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Tasks.Task">
+      <Item value="Factory" priority="0" />
+      <Item value="WaitAny`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Count" priority="1" />
+      <Item value="Remove`0" priority="1" />
+      <Item value="Add`0" priority="0" />
+      <Item value="ToArray`0" priority="1" />
+      <Item value="ElementAt`1" priority="0" />
+      <Item value="RemoveAt`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Tasks.Task">
+      <Item value="Status" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Security.Cryptography.MD5">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
