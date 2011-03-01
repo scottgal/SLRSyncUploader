@@ -1,5 +1,0 @@
-D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Utils\Bin\Debug\mpost.SilverlightMultiFileUpload.Utils.dll
-D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Utils\Bin\Debug\mpost.SilverlightMultiFileUpload.Utils.pdb
-D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Utils\obj\Debug\ResolveAssemblyReference.cache
-D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Utils\obj\Debug\mpost.SilverlightMultiFileUpload.Utils.dll
-D:\Downloads\slfileupload-54428\SilverlightMultiFileUploader\mpost.SilverlightMultiFileUpload.Utils\obj\Debug\mpost.SilverlightMultiFileUpload.Utils.pdb
