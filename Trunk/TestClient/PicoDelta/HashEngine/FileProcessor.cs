@@ -53,6 +53,10 @@ namespace HashEngine
         }
 
         
+        public ConcurrentBag<FileChunk> ScanChunk(string filePath, long startOffset, long endOffset, Config config)
+        {
+            return null
+        }
         public static ConcurrentDictionary<long, FileHash> GetHashesForFile(string filePath, Config config)
         {
 
