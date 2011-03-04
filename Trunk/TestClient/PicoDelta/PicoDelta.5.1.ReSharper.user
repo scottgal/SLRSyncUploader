@@ -9,25 +9,15 @@
   <RecentFiles>
     <RecentFiles>
       <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Adler32.cs" caret="2668" fromTop="15" />
-      <File id="14AE46F8-E4D1-4BB3-83E9-80D4737DA8C5/f:Program.cs" caret="647" fromTop="25" />
       <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Config.cs" caret="643" fromTop="29" />
       <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:EngineMode.cs" caret="0" fromTop="0" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Murmurhash2.cs" caret="2047" fromTop="22" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="422" fromTop="23" />
       <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileHash.cs" caret="404" fromTop="24" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="1360" fromTop="45" />
+      <File id="14AE46F8-E4D1-4BB3-83E9-80D4737DA8C5/f:Program.cs" caret="711" fromTop="20" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="0" fromTop="0" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="724" fromTop="28" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Murmurhash2.cs" caret="3466" fromTop="62" />
     </RecentFiles>
     <RecentEdits>
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="62" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="37" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="26" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="16" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileHash.cs" caret="170" fromTop="9" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="35" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="42" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3944" fromTop="29" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="24" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="4001" fromTop="36" />
       <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="173" fromTop="6" />
       <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="479" fromTop="19" />
       <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="134" fromTop="7" />
@@ -48,6 +38,16 @@
       <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3166" fromTop="46" />
       <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="539" fromTop="19" />
       <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="616" fromTop="24" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Murmurhash2.cs" caret="156" fromTop="8" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Murmurhash2.cs" caret="4713" fromTop="4" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Murmurhash2.cs" caret="3984" fromTop="27" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Murmurhash2.cs" caret="3970" fromTop="43" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Murmurhash2.cs" caret="3916" fromTop="36" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Murmurhash2.cs" caret="2854" fromTop="16" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Murmurhash2.cs" caret="3676" fromTop="62" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Murmurhash2.cs" caret="3594" fromTop="59" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Murmurhash2.cs" caret="3544" fromTop="62" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Murmurhash2.cs" caret="3464" fromTop="62" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

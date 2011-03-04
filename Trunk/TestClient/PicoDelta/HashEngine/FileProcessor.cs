@@ -19,33 +19,40 @@ namespace HashEngine
           
             var fileInfo = new FileInfo(filePath);
 
+            var fileLength = fileInfo.Length;
             var fileChunkSize =Convert.ToInt64(fileInfo.Length/config.DegreeOfParalleism);   
-
-
             var taskArray = new List<Task>(config.DegreeOfParalleism);
 
 
-
-
-
-            if (taskArray.Count <= config.DegreeOfParalleism)
+            long chunkStart =0;
+            long chunkEnd =0;
+            long chunkOverlap;
+            for (int i = 0; i <= config.DegreeOfParalleism; i++)
             {
-                taskArray.Add(Task.Factory.StartNew(() => ScanFileChunk(remoteHashes, filePath,  config))
-                                  .ContinueWith(
-                                      outHash => resultDictionary.TryAdd(outHash.Result.WeakHash, outHash.Result)));
+                chunkEnd = chunkEnd + fileChunkSize;
+                chunkOverlap = chunkEnd + config.BlockLength;
 
-            }
-            else
-            {
-                complete = Task.WaitAny(taskArray.ToArray());
-                taskArray.RemoveAt(complete);
-            }
 
+                if (taskArray.Count <= config.DegreeOfParalleism)
+                {
+                    taskArray.Add(Task.Factory.StartNew(() => ScanFileChunk(remoteHashes, filePath, chunkStart, chunkOverlap, config))
+                                      .ContinueWith(
+                                          outHash => resultDictionary.TryAdd(outHash.Result.WeakHash, outHash.Result)));
+
+                }
+                else
+                {
+                    complete = Task.WaitAny(taskArray.ToArray());
+                    taskArray.RemoveAt(complete);
+                }
+
+                chunkStart = chunkEnd + 1;
+            }
             return null;
         }
 
         
-        public ConcurrentBag<FileChunk> ScanFileChunk(ConcurrentDictionary<long, FileHash> remoteHashes, string filePath, long startOffset, long endOffset, Config config)
+        public static ConcurrentBag<FileChunk> ScanFileChunk(ConcurrentDictionary<long, FileHash> remoteHashes, string filePath, long startOffset, long endOffset, Config config)
         {
             var windowBuffer = new byte[config.BlockLength];
             var windowChecksum = new Adler32();
@@ -53,7 +60,7 @@ namespace HashEngine
 
             
             long currentFilePosition = 0;
-            var procCount = Environment.ProcessorCount * 15;
+            var procCount = config.DegreeOfParalleism * 15;
             var taskArray = new List<Task>(procCount);
             var bytesToRead = config.BlockLength;
             int complete = 0;
