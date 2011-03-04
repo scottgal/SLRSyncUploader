@@ -9,45 +9,45 @@
   <RecentFiles>
     <RecentFiles>
       <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Adler32.cs" caret="2668" fromTop="15" />
-      <File id="14AE46F8-E4D1-4BB3-83E9-80D4737DA8C5/f:Program.cs" caret="647" fromTop="25" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Config.cs" caret="643" fromTop="29" />
       <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:EngineMode.cs" caret="0" fromTop="0" />
       <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Murmurhash2.cs" caret="2047" fromTop="22" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="422" fromTop="23" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileHash.cs" caret="404" fromTop="24" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="1360" fromTop="45" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileHash.cs" caret="0" fromTop="0" />
+      <File id="14AE46F8-E4D1-4BB3-83E9-80D4737DA8C5/f:Program.cs" caret="844" fromTop="27" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Config.cs" caret="926" fromTop="41" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="0" fromTop="0" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="1599" fromTop="47" />
     </RecentFiles>
     <RecentEdits>
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="62" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="37" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="26" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="16" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileHash.cs" caret="170" fromTop="9" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="35" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="42" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3944" fromTop="29" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3940" fromTop="24" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="4001" fromTop="36" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="173" fromTop="6" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="479" fromTop="19" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="134" fromTop="7" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="388" fromTop="21" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileChunk.cs" caret="263" fromTop="13" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3697" fromTop="54" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3317" fromTop="22" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3269" fromTop="17" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3497" fromTop="25" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3813" fromTop="34" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3565" fromTop="33" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="2008" fromTop="29" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="1762" fromTop="25" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="1491" fromTop="20" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="2811" fromTop="54" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="2201" fromTop="37" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="2406" fromTop="47" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3166" fromTop="46" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="539" fromTop="19" />
-      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="616" fromTop="24" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="5407" fromTop="22" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="5359" fromTop="17" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="5619" fromTop="33" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="4031" fromTop="29" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="4816" fromTop="54" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="4263" fromTop="37" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="5029" fromTop="41" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3706" fromTop="14" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3688" fromTop="14" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="5284" fromTop="30" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="5849" fromTop="63" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="5562" fromTop="52" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="4117" fromTop="12" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="4509" fromTop="28" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="4325" fromTop="21" />
+      <File id="14AE46F8-E4D1-4BB3-83E9-80D4737DA8C5/f:Program.cs" caret="786" fromTop="22" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Config.cs" caret="218" fromTop="12" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="493" fromTop="34" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="493" fromTop="11" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="493" fromTop="13" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="493" fromTop="19" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="1488" fromTop="57" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="1490" fromTop="11" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Config.cs" caret="332" fromTop="14" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:Config.cs" caret="541" fromTop="23" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="3537" fromTop="38" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="1256" fromTop="36" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="491" fromTop="15" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="902" fromTop="27" />
+      <File id="41477258-8867-4D34-8E9F-92FC4EFA9055/f:FileProcessor.cs" caret="722" fromTop="24" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -62,34 +62,34 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="public" priority="18" />
+      <Item value="public" priority="20" />
       <Item value="static" priority="8" />
-      <Item value="void" priority="0" />
-      <Item value="int" priority="11" />
-      <Item value="byte" priority="13" />
+      <Item value="void" priority="1" />
+      <Item value="int" priority="13" />
+      <Item value="byte" priority="14" />
       <Item value="AppDomainSetup`0" priority="2" />
       <Item value="ParallelEnumerable`0" priority="0" />
       <Item value="bool" priority="2" />
-      <Item value="Config`0" priority="3" />
-      <Item value="private" priority="6" />
-      <Item value="return" priority="7" />
+      <Item value="Config`0" priority="4" />
+      <Item value="private" priority="8" />
+      <Item value="return" priority="9" />
       <Item value="_blockLength" priority="2" />
-      <Item value="value" priority="0" />
+      <Item value="value" priority="1" />
       <Item value="Encoder`0" priority="0" />
       <Item value="_engineMode" priority="2" />
       <Item value="Parallel" priority="0" />
-      <Item value="var" priority="23" />
-      <Item value="FileHash`0" priority="7" />
-      <Item value="new" priority="17" />
-      <Item value="FileInfo`0" priority="0" />
+      <Item value="var" priority="30" />
+      <Item value="FileHash`0" priority="8" />
+      <Item value="new" priority="20" />
+      <Item value="FileInfo`0" priority="1" />
       <Item value="if" priority="6" />
       <Item value="File`0" priority="3" />
       <Item value="null" priority="1" />
       <Item value="throw" priority="0" />
       <Item value="NullReferenceException" priority="0" />
-      <Item value="fileInfo" priority="0" />
+      <Item value="fileInfo" priority="1" />
       <Item value="fileLength" priority="4" />
-      <Item value="config" priority="3" />
+      <Item value="config" priority="8" />
       <Item value="localBlockLength" priority="2" />
       <Item value="using" priority="3" />
       <Item value="file" priority="2" />
@@ -102,7 +102,7 @@
       <Item value="ref" priority="2" />
       <Item value="CalculateHashes`0" priority="0" />
       <Item value="fileHash" priority="3" />
-      <Item value="Task`0" priority="8" />
+      <Item value="Task`0" priority="10" />
       <Item value="taskA" priority="1" />
       <Item value="System" priority="2" />
       <Item value="Collections" priority="1" />
@@ -114,7 +114,7 @@
       <Item value="Adler32`0" priority="5" />
       <Item value="adlerHash" priority="2" />
       <Item value="offset" priority="3" />
-      <Item value="buffer" priority="3" />
+      <Item value="buffer" priority="4" />
       <Item value="Security" priority="0" />
       <Item value="Cryptography" priority="0" />
       <Item value="MD5CryptoServiceProvider`0" priority="1" />
@@ -125,44 +125,52 @@
       <Item value="weakHash" priority="1" />
       <Item value="StrongHash" priority="0" />
       <Item value="strongHash" priority="1" />
-      <Item value="Console`0" priority="2" />
+      <Item value="Console`0" priority="3" />
       <Item value="foreach" priority="1" />
       <Item value="in" priority="1" />
-      <Item value="outDict" priority="0" />
+      <Item value="outDict" priority="1" />
       <Item value="entry" priority="3" />
-      <Item value="Environment`0" priority="0" />
+      <Item value="Environment`0" priority="1" />
       <Item value="taskArray" priority="16" />
       <Item value="currentTasks" priority="1" />
       <Item value="false" priority="1" />
-      <Item value="procCount" priority="1" />
+      <Item value="procCount" priority="2" />
       <Item value="TaskFactory`0" priority="0" />
       <Item value="task" priority="0" />
       <Item value="RanToCompletion" priority="0" />
       <Item value="else" priority="1" />
       <Item value="ValueType`0" priority="0" />
       <Item value="currArray" priority="0" />
-      <Item value="ConcurrentBag" priority="1" />
+      <Item value="ConcurrentBag" priority="2" />
       <Item value="lock" priority="0" />
       <Item value="break" priority="0" />
-      <Item value="string" priority="0" />
+      <Item value="string" priority="1" />
       <Item value="Adler32" priority="0" />
       <Item value="MD5CryptoServiceProvider" priority="1" />
       <Item value="_md5Internal" priority="5" />
       <Item value="MD5`0" priority="0" />
-      <Item value="long" priority="3" />
+      <Item value="long" priority="6" />
       <Item value="adler32" priority="2" />
       <Item value="CalculateWeakHash`0" priority="0" />
       <Item value="CalculateStrongHash`0" priority="0" />
       <Item value="windowBuffer" priority="0" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="sortedDict" priority="0" />
+      <Item value="Take`1" priority="0" />
+      <Item value="_degreeOfParalellism" priority="1" />
+      <Item value="Math`0" priority="0" />
+      <Item value="remoteHashes" priority="0" />
+      <Item value="filePath" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.IO.File">
       <Item value="Exists`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.IO.FileInfo">
-      <Item value="Length" priority="0" />
+      <Item value="Length" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HashEngine.Config">
-      <Item value="BlockLength" priority="3" />
+      <Item value="BlockLength" priority="4" />
+      <Item value="DegreeOfParalleism" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.IO.FileStream">
       <Item value="Read`0" priority="0" />
@@ -175,15 +183,16 @@
     <ItemStatistics item="Qualified:System.Collections.Concurrent.ConcurrentDictionary`2">
       <Item value="AddOrUpdate`0" priority="0" />
       <Item value="TryAdd`0" priority="0" />
+      <Item value="Select`2" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HashEngine.FileHash">
       <Item value="WeakHash" priority="2" />
       <Item value="StrongHash" priority="0" />
-      <Item value="Offset" priority="0" />
+      <Item value="Offset" priority="1" />
       <Item value="Length" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:HashEngine.Adler32">
-      <Item value="Update`0" priority="2" />
+      <Item value="Update`0" priority="3" />
       <Item value="Value" priority="0" />
       <Item value="Reset`0" priority="1" />
     </ItemStatistics>
@@ -199,14 +208,14 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
       <Item value="ReadKey`0" priority="0" />
-      <Item value="WriteLine`0" priority="1" />
+      <Item value="WriteLine`0" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
-      <Item value="Key" priority="0" />
-      <Item value="Value" priority="2" />
+      <Item value="Key" priority="1" />
+      <Item value="Value" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Environment">
-      <Item value="ProcessorCount" priority="1" />
+      <Item value="ProcessorCount" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Threading.Tasks.TaskFactory">
       <Item value="ContinueWhenAny`1" priority="0" />
@@ -215,6 +224,7 @@
     <ItemStatistics item="Qualified:@System.Threading.Tasks.Task">
       <Item value="Factory" priority="0" />
       <Item value="WaitAny`0" priority="0" />
+      <Item value="WaitAll`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
       <Item value="Count" priority="1" />
@@ -229,6 +239,23 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Security.Cryptography.MD5">
       <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="OrderBy`2" priority="0" />
+      <Item value="Skip`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IOrderedEnumerable`1">
+      <Item value="AsParallel`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToBase64String`0" priority="0" />
+      <Item value="ToInt64`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.ParallelQuery`1">
+      <Item value="Count`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="Round`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
