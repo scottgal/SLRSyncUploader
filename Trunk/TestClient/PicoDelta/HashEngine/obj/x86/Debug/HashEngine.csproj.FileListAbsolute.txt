@@ -8,3 +8,5 @@ O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\HashEngine\bin\Debug\Hash
 O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\HashEngine\obj\x86\Debug\ResolveAssemblyReference.cache
 O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\HashEngine\obj\x86\Debug\HashEngine.dll
 O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\HashEngine\obj\x86\Debug\HashEngine.pdb
+C:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\HashEngine\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\HashEngine\obj\x86\Debug\HashEngine.dll

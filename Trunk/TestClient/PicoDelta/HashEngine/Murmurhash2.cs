@@ -7,8 +7,6 @@ using System.Text;
 namespace HashEngine
 {
 
-    namespace HashTableHashing
-    {
         public class MurmurHash2Simple
         {
             public UInt32 Hash(Byte[] data)
@@ -128,4 +126,4 @@ namespace HashEngine
 
       
     }
-}
+

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using System.IO;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Concurrent;
@@ -18,60 +19,65 @@ namespace HashEngine
         {
           
             var fileInfo = new FileInfo(filePath);
-
-            var fileChunkSize =Convert.ToInt64(fileInfo.Length/config.DegreeOfParalleism);   
-
-
+            var fileChunkSize =Convert.ToInt64(fileInfo.Length/config.DegreeOfParalleism);
             var taskArray = new List<Task>(config.DegreeOfParalleism);
 
-
-
-
-
-            if (taskArray.Count <= config.DegreeOfParalleism)
+            long chunkStart =0;
+            long chunkEnd =0;
+            
+            var resultBag = new ConcurrentBag<FileChunk>();
+            for (var i = 0; i <= config.DegreeOfParalleism; i++)
             {
-                taskArray.Add(Task.Factory.StartNew(() => ScanFileChunk(remoteHashes, filePath,  config))
-                                  .ContinueWith(
-                                      outHash => resultDictionary.TryAdd(outHash.Result.WeakHash, outHash.Result)));
+                chunkEnd = chunkEnd + fileChunkSize;
+                var chunkOverlap = chunkEnd + config.BlockLength;
 
-            }
-            else
-            {
-                complete = Task.WaitAny(taskArray.ToArray());
-                taskArray.RemoveAt(complete);
-            }
 
+                if (taskArray.Count <= config.DegreeOfParalleism)
+                {
+                    taskArray.Add(Task.Factory.StartNew(
+                        () => ScanFileChunk(remoteHashes, filePath, chunkStart, chunkOverlap, config))
+                                      .ContinueWith(
+                                          outHash => outHash.Result.ForEach(resultBag.Add)));
+
+                }
+                else
+                {
+                    var complete = Task.WaitAny(taskArray.ToArray());
+                    taskArray.RemoveAt(complete);
+                }
+
+                chunkStart = chunkEnd + 1;
+            }
             return null;
         }
 
         
-        public ConcurrentBag<FileChunk> ScanFileChunk(ConcurrentDictionary<long, FileHash> remoteHashes, string filePath, long startOffset, long endOffset, Config config)
+        public static List<FileChunk> ScanFileChunk(ConcurrentDictionary<long, FileHash> remoteHashes, string filePath, long startOffset, long endOffset, Config config)
         {
             var windowBuffer = new byte[config.BlockLength];
             var windowChecksum = new Adler32();
 
-
-            
+            var chunkLength = endOffset - startOffset;
+            var localBlockLength = config.BlockLength;
             long currentFilePosition = 0;
-            var procCount = Environment.ProcessorCount * 15;
+            var procCount = config.DegreeOfParalleism * 15;
             var taskArray = new List<Task>(procCount);
             var bytesToRead = config.BlockLength;
             int complete = 0;
-            var buffer = new byte[config.BlockLength * procCount];
-           using (var file = File.OpenRead(filePath))
-            {
-               
-                while (currentFilePosition < fileLength)
+            var buffer = new byte[localBlockLength];
+           using (var file = new FileStream(filePath,FileMode.Open,FileAccess.Read,FileShare.Read))
+           {
+               file.Seek(startOffset, SeekOrigin.Begin); 
+               while (currentFilePosition < chunkLength) 
                 {
-                    if (currentFilePosition + localBlockLength > fileLength)
+                    if (currentFilePosition + localBlockLength > chunkLength)
                     {
-                        bytesToRead = checked((int) (fileLength - currentFilePosition));
+                        bytesToRead = checked((int) (chunkLength - currentFilePosition));
                         buffer = new byte[bytesToRead];
                     }
                     var offSetPosition = currentFilePosition;
 
                     if (file.Read(buffer, 0, bytesToRead) < 0)
-
                     {
                         break;
                     }
@@ -101,13 +107,12 @@ namespace HashEngine
             long currentFilePosition = 0;
             var bytesToRead = config.BlockLength;
             var buffer = new byte[bytesToRead];
-            int complete = 0;
             var procCount = config.DegreeOfParalleism * 15;
             var taskArray = new List<Task>(procCount);
-            using (var file = File.OpenRead(filePath))
+            using (var file = new FileStream(filePath,FileMode.Open,FileAccess.Read, FileShare.Read))
             {
                 
-                
+          
                 while (currentFilePosition < fileLength)
                 {
                     if (currentFilePosition + localBlockLength > fileLength)
@@ -134,7 +139,7 @@ namespace HashEngine
                     }
                     else
                     {
-                        complete = Task.WaitAny(taskArray.ToArray());
+                        var complete = Task.WaitAny(taskArray.ToArray());
                         taskArray.RemoveAt(complete);
                     }
 
