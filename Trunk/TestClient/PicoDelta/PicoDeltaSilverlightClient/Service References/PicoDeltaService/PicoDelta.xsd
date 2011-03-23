@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PicoDeltaSl" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PicoDeltaSl" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="FileHash">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Length" type="xs:int" />
+      <xs:element minOccurs="0" name="Offset" type="xs:long" />
+      <xs:element minOccurs="0" name="StrongHash" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="WeakHash" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FileHash" nillable="true" type="tns:FileHash" />
+  <xs:complexType name="Config">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BlockLength" type="xs:int" />
+      <xs:element minOccurs="0" name="BufferSize" type="xs:int" />
+      <xs:element minOccurs="0" name="DegreeOfParalleism" type="xs:int" />
+      <xs:element minOccurs="0" name="EngineMode" type="tns:EngineMode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Config" nillable="true" type="tns:Config" />
+  <xs:simpleType name="EngineMode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Parallel" />
+      <xs:enumeration value="Single" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="EngineMode" nillable="true" type="tns:EngineMode" />
+</xs:schema>

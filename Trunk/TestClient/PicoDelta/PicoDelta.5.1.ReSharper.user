@@ -21,29 +21,17 @@
       <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/d:Interfaces/f:IPicoDelta.cs" caret="442" fromTop="17" />
       <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:Web.config" caret="926" fromTop="32" />
       <File id="AFD6B648-F88C-4CF0-980F-9A34AE87CCA4/f:ProgressReporter.cs" caret="1213" fromTop="42" />
-      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.svc" caret="124" fromTop="1" />
-      <File id="AFD6B648-F88C-4CF0-980F-9A34AE87CCA4/f:FileProcessor.cs" caret="9011" fromTop="24" />
-      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="437" fromTop="16" />
       <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/d:Properties/f:AssemblyInfo.cs" caret="908" fromTop="20" />
-      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:ServiceReferences.ClientConfig" caret="737" fromTop="17" />
-      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="611" fromTop="23" />
+      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:ServiceReferences.ClientConfig" caret="264" fromTop="5" />
+      <File id="AFD6B648-F88C-4CF0-980F-9A34AE87CCA4/f:FileProcessor.cs" caret="10906" fromTop="27" />
+      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/d:Service References/d:PicoDeltaService/f:Reference.cs" caret="20234" fromTop="20" />
+      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="461" fromTop="13" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:DataStore.Designer.cs" caret="0" fromTop="0" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.svc" caret="0" fromTop="0" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="482" fromTop="14" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:ScanProgress.cs" caret="862" fromTop="37" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="611" fromTop="26" />
-      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="1073" fromTop="48" />
-      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="1077" fromTop="60" />
-      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="1073" fromTop="45" />
-      <File id="BEB0F6B7-DE94-4E15-B8F0-D16C9724456D/f:ProgressReporter.cs/l:..?PicoDeltaSl?ProgressReporter.cs" caret="1063" fromTop="22" />
-      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/d:Interfaces/f:IPicoDelta.cs" caret="204" fromTop="7" />
-      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/d:Interfaces/f:IPicoDelta.cs" caret="373" fromTop="15" />
-      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/d:Interfaces/f:IPicoDelta.cs" caret="575" fromTop="22" />
-      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/d:Interfaces/f:IPicoDelta.cs" caret="597" fromTop="26" />
-      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:Web.config" caret="680" fromTop="14" />
-      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="759" fromTop="19" />
-      <File id="AFD6B648-F88C-4CF0-980F-9A34AE87CCA4/f:Manifest.cs" caret="512" fromTop="22" />
-      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:Web.config" caret="881" fromTop="48" />
-      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:Web.config" caret="881" fromTop="40" />
-      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:Web.config" caret="595" fromTop="18" />
       <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:Web.config" caret="741" fromTop="27" />
       <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:Web.config" caret="238" fromTop="9" />
       <File id="AFD6B648-F88C-4CF0-980F-9A34AE87CCA4/f:FileProcessor.cs" caret="627" fromTop="19" />
@@ -51,14 +39,29 @@
       <File id="AFD6B648-F88C-4CF0-980F-9A34AE87CCA4/f:ProgressReporter.cs" caret="338" fromTop="16" />
       <File id="AFD6B648-F88C-4CF0-980F-9A34AE87CCA4/f:ProgressReporter.cs" caret="1338" fromTop="42" />
       <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.svc" caret="115" fromTop="0" />
-      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="421" fromTop="14" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="531" fromTop="14" />
       <File id="AFD6B648-F88C-4CF0-980F-9A34AE87CCA4/f:FileProcessor.cs" caret="8944" fromTop="22" />
-      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="654" fromTop="20" />
-      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="1155" fromTop="16" />
-      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="1054" fromTop="29" />
-      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="1289" fromTop="53" />
-      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="706" fromTop="26" />
-      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="1099" fromTop="41" />
+      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="1061" fromTop="29" />
+      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="1296" fromTop="53" />
+      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="1106" fromTop="41" />
+      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="894" fromTop="30" />
+      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:ServiceReferences.ClientConfig" caret="275" fromTop="5" />
+      <File id="F4E00B72-09DA-46BA-80E7-6479268DA388/f:MainPage.xaml.cs" caret="461" fromTop="13" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:DataStore.Designer.cs" caret="0" fromTop="0" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="2269" fromTop="44" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="304" fromTop="8" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="51" fromTop="1" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="1778" fromTop="39" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="1778" fromTop="35" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="1778" fromTop="29" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="1778" fromTop="24" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="1746" fromTop="49" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:PicoDelta.cs" caret="1944" fromTop="61" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:ScanProgress.cs" caret="633" fromTop="22" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:ScanProgress.cs" caret="906" fromTop="35" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:ScanProgress.cs" caret="444" fromTop="17" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:ScanProgress.cs" caret="109" fromTop="4" />
+      <File id="4750A90F-FA99-44F7-9659-AE36A3DB77CD/f:ScanProgress.cs" caret="727" fromTop="33" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -73,27 +76,27 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="public" priority="32" />
+      <Item value="public" priority="41" />
       <Item value="static" priority="12" />
       <Item value="void" priority="4" />
-      <Item value="int" priority="20" />
-      <Item value="byte" priority="19" />
+      <Item value="int" priority="25" />
+      <Item value="byte" priority="20" />
       <Item value="AppDomainSetup`0" priority="2" />
       <Item value="ParallelEnumerable`0" priority="0" />
       <Item value="bool" priority="3" />
       <Item value="Config`0" priority="8" />
       <Item value="private" priority="15" />
-      <Item value="return" priority="15" />
+      <Item value="return" priority="20" />
       <Item value="_blockLength" priority="4" />
       <Item value="value" priority="2" />
       <Item value="Encoder`0" priority="0" />
       <Item value="_engineMode" priority="3" />
       <Item value="Parallel" priority="0" />
-      <Item value="var" priority="53" />
-      <Item value="FileHash`0" priority="9" />
-      <Item value="new" priority="39" />
+      <Item value="var" priority="58" />
+      <Item value="FileHash`0" priority="11" />
+      <Item value="new" priority="46" />
       <Item value="FileInfo`0" priority="1" />
-      <Item value="if" priority="16" />
+      <Item value="if" priority="17" />
       <Item value="File`0" priority="5" />
       <Item value="null" priority="2" />
       <Item value="throw" priority="0" />
@@ -102,7 +105,7 @@
       <Item value="fileLength" priority="4" />
       <Item value="config" priority="10" />
       <Item value="localBlockLength" priority="2" />
-      <Item value="using" priority="10" />
+      <Item value="using" priority="14" />
       <Item value="file" priority="3" />
       <Item value="List" priority="2" />
       <Item value="while" priority="0" />
@@ -115,7 +118,7 @@
       <Item value="fileHash" priority="3" />
       <Item value="Task`0" priority="14" />
       <Item value="taskA" priority="1" />
-      <Item value="System" priority="8" />
+      <Item value="System" priority="11" />
       <Item value="Collections" priority="2" />
       <Item value="Concurrent" priority="1" />
       <Item value="Dictionary" priority="0" />
@@ -160,7 +163,7 @@
       <Item value="MD5CryptoServiceProvider" priority="1" />
       <Item value="_md5Internal" priority="5" />
       <Item value="MD5`0" priority="0" />
-      <Item value="long" priority="13" />
+      <Item value="long" priority="14" />
       <Item value="adler32" priority="2" />
       <Item value="CalculateWeakHash`0" priority="0" />
       <Item value="CalculateStrongHash`0" priority="0" />
@@ -171,10 +174,10 @@
       <Item value="_degreeOfParalellism" priority="1" />
       <Item value="Math`0" priority="0" />
       <Item value="remoteHashes" priority="1" />
-      <Item value="filePath" priority="0" />
+      <Item value="filePath" priority="1" />
       <Item value="SortedDictionary" priority="3" />
       <Item value="sortedHashes" priority="2" />
-      <Item value="x" priority="5" />
+      <Item value="x" priority="6" />
       <Item value="SortedDictionary&lt;long,FileHash&gt;" priority="0" />
       <Item value="ECKeyXmlFormat`0" priority="0" />
       <Item value="FileBlock`0" priority="0" />
@@ -185,7 +188,7 @@
       <Item value="delegate" priority="2" />
       <Item value="invoke" priority="1" />
       <Item value="readStartOffset" priority="7" />
-      <Item value="ConcurrentDictionary" priority="2" />
+      <Item value="ConcurrentDictionary" priority="3" />
       <Item value="ProgressReporter`0" priority="6" />
       <Item value="progressReporter" priority="1" />
       <Item value="event" priority="3" />
@@ -215,7 +218,7 @@
       <Item value="Read" priority="3" />
       <Item value="SHA256Managed`0" priority="0" />
       <Item value="SHA256`0" priority="0" />
-      <Item value="MemoryStream`0" priority="0" />
+      <Item value="MemoryStream`0" priority="1" />
       <Item value="FillBuffer`0" priority="0" />
       <Item value="chunkMap" priority="5" />
       <Item value="Select`2" priority="0" />
@@ -239,7 +242,7 @@
       <Item value="chunkStartOffset" priority="1" />
       <Item value="chunkReadOffset" priority="2" />
       <Item value="fileBlockChunkStartOffset" priority="0" />
-      <Item value="PicoDeltaSl" priority="0" />
+      <Item value="PicoDeltaSl" priority="1" />
       <Item value="fileProcessor" priority="2" />
       <Item value="diagnosticOutputBlock" priority="1" />
       <Item value="hashes" priority="1" />
@@ -255,11 +258,37 @@
       <Item value="Config" priority="0" />
       <Item value="filepath" priority="0" />
       <Item value="GetHashesForFile`0" priority="0" />
-      <Item value="fileHashes" priority="0" />
+      <Item value="fileHashes" priority="1" />
       <Item value="PicoDeltaService" priority="1" />
       <Item value="PicoDeltaClient`0" priority="2" />
-      <Item value="picoDeltaClient" priority="1" />
+      <Item value="picoDeltaClient" priority="2" />
       <Item value="e" priority="0" />
+      <Item value="DataStoreEntities`0" priority="1" />
+      <Item value="ds" priority="2" />
+      <Item value="fileSignature" priority="2" />
+      <Item value="default" priority="0" />
+      <Item value="IO" priority="0" />
+      <Item value="Reflection" priority="0" />
+      <Item value="Runtime" priority="0" />
+      <Item value="Serialization" priority="0" />
+      <Item value="Formatters.Binary" priority="0" />
+      <Item value="BinaryFormatter`0" priority="0" />
+      <Item value="binaryFormatter" priority="1" />
+      <Item value="memoryStream" priority="0" />
+      <Item value="ms" priority="1" />
+      <Item value="FileSignature" priority="0" />
+      <Item value="EntityKey" priority="0" />
+      <Item value="FileId" priority="0" />
+      <Item value="Guid`0" priority="1" />
+      <Item value="FilePath" priority="0" />
+      <Item value="Signature" priority="0" />
+      <Item value="class" priority="1" />
+      <Item value="namespace" priority="0" />
+      <Item value="ChunkProgress" priority="2" />
+      <Item value="ChunkLength" priority="0" />
+      <Item value="CurrentPosition" priority="0" />
+      <Item value="Linq" priority="0" />
+      <Item value="NumberOfChunks" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.IO.File">
       <Item value="Exists`0" priority="0" />
@@ -341,12 +370,14 @@
       <Item value="WaitAll`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
-      <Item value="Count" priority="1" />
+      <Item value="Count" priority="2" />
       <Item value="Remove`0" priority="1" />
       <Item value="Add`0" priority="0" />
       <Item value="ToArray`0" priority="1" />
       <Item value="ElementAt`1" priority="0" />
       <Item value="RemoveAt`0" priority="0" />
+      <Item value="ForEach`0" priority="0" />
+      <Item value="Sum`1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Threading.Tasks.Task">
       <Item value="Status" priority="0" />
@@ -436,6 +467,35 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:PicoDeltaSilverlightClient.PicoDeltaService.GetHashesForFileCompletedEventArgs">
       <Item value="Result" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PicoDeltaSilverlightClient.Web.DataStoreEntities">
+      <Item value="FileSignatures" priority="1" />
+      <Item value="SaveChanges`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectSet`1">
+      <Item value="Where`0" priority="0" />
+      <Item value="AddObject`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PicoDeltaSilverlightClient.Web.FileSignature">
+      <Item value="FilePath" priority="0" />
+      <Item value="Signature" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="Select`2" priority="0" />
+      <Item value="FirstOrDefault`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter">
+      <Item value="Serialize`0" priority="0" />
+      <Item value="Deserialize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Guid">
+      <Item value="NewGuid`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.MemoryStream">
+      <Item value="ToArray`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PicoDeltaSilverlightClient.Web.ChunkProgress">
+      <Item value="PercentComplete" priority="1" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

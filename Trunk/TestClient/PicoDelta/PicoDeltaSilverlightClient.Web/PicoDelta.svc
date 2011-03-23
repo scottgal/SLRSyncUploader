@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PicoDeltaSilverlightClient.Web.PicoDelta" CodeBehind="PicoDelta.cs" %>

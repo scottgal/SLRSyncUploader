@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DataStoreModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="DataStoreModelStoreContainer">
+          <EntitySet Name="FileSignatures" EntityType="DataStoreModel.Store.FileSignatures" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SessionManifest" EntityType="DataStoreModel.Store.SessionManifest" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SessionProgress" EntityType="DataStoreModel.Store.SessionProgress" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="FileSignatures">
+          <Key>
+            <PropertyRef Name="FileId" />
+          </Key>
+          <Property Name="FileId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="FilePath" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="Signature" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="SessionManifest">
+          <Key>
+            <PropertyRef Name="SessionId" />
+          </Key>
+          <Property Name="SessionId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ManifestObject" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="SessionProgress">
+          <Key>
+            <PropertyRef Name="SessionId" />
+          </Key>
+          <Property Name="SessionId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ProgressObject" Type="varbinary(max)" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DataStoreModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DataStoreEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="FileSignatures" EntityType="DataStoreModel.FileSignature" />
+          <EntitySet Name="SessionManifests" EntityType="DataStoreModel.SessionManifest" />
+          <EntitySet Name="SessionProgresses" EntityType="DataStoreModel.SessionProgress" />
+        </EntityContainer>
+        <EntityType Name="FileSignature">
+          <Key>
+            <PropertyRef Name="FileId" />
+          </Key>
+          <Property Name="FileId" Type="Guid" Nullable="false" />
+          <Property Name="FilePath" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Signature" Type="Binary" />
+        </EntityType>
+        <EntityType Name="SessionManifest">
+          <Key>
+            <PropertyRef Name="SessionId" />
+          </Key>
+          <Property Name="SessionId" Type="Guid" Nullable="false" />
+          <Property Name="ManifestObject" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="SessionProgress">
+          <Key>
+            <PropertyRef Name="SessionId" />
+          </Key>
+          <Property Name="SessionId" Type="Guid" Nullable="false" />
+          <Property Name="ProgressObject" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DataStoreModelStoreContainer" CdmEntityContainer="DataStoreEntities">
+          <EntitySetMapping Name="FileSignatures"><EntityTypeMapping TypeName="DataStoreModel.FileSignature"><MappingFragment StoreEntitySet="FileSignatures">
+            <ScalarProperty Name="FileId" ColumnName="FileId" />
+            <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+            <ScalarProperty Name="Signature" ColumnName="Signature" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SessionManifests"><EntityTypeMapping TypeName="DataStoreModel.SessionManifest"><MappingFragment StoreEntitySet="SessionManifest">
+            <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+            <ScalarProperty Name="ManifestObject" ColumnName="ManifestObject" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SessionProgresses"><EntityTypeMapping TypeName="DataStoreModel.SessionProgress"><MappingFragment StoreEntitySet="SessionProgress">
+            <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+            <ScalarProperty Name="ProgressObject" ColumnName="ProgressObject" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="DataStore">
+        <EntityTypeShape EntityType="DataStoreModel.FileSignature" Width="1.5" PointX="0.75" PointY="0.75" Height="1.59568359375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataStoreModel.SessionManifest" Width="1.5" PointX="2.75" PointY="0.75" Height="1.4033821614583335" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataStoreModel.SessionProgress" Width="1.5" PointX="0.75" PointY="3.75" Height="1.4033821614583322" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PicoDelta" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/PicoDeltaSilverlightClient.Web/PicoDelta.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/PicoDeltaSilverlightClient.Web/PicoDelta.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/PicoDeltaSilverlightClient.Web/PicoDelta.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost/PicoDeltaSilverlightClient.Web/PicoDelta.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PicoDeltaSl" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPicoDelta_GetHashesForFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHashesForFile" />
+  </wsdl:message>
+  <wsdl:message name="IPicoDelta_GetHashesForFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHashesForFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPicoDelta_DownloadCurrentConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadCurrentConfig" />
+  </wsdl:message>
+  <wsdl:message name="IPicoDelta_DownloadCurrentConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadCurrentConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPicoDelta_UploadManifest_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadManifest" />
+  </wsdl:message>
+  <wsdl:message name="IPicoDelta_UploadManifest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadManifestResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPicoDelta">
+    <wsdl:operation name="GetHashesForFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPicoDelta/GetHashesForFile" message="tns:IPicoDelta_GetHashesForFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPicoDelta/GetHashesForFileResponse" message="tns:IPicoDelta_GetHashesForFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadCurrentConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPicoDelta/DownloadCurrentConfig" message="tns:IPicoDelta_DownloadCurrentConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPicoDelta/DownloadCurrentConfigResponse" message="tns:IPicoDelta_DownloadCurrentConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadManifest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPicoDelta/UploadManifest" message="tns:IPicoDelta_UploadManifest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPicoDelta/UploadManifestResponse" message="tns:IPicoDelta_UploadManifest_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPicoDelta" type="tns:IPicoDelta">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetHashesForFile">
+      <soap:operation soapAction="http://tempuri.org/IPicoDelta/GetHashesForFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadCurrentConfig">
+      <soap:operation soapAction="http://tempuri.org/IPicoDelta/DownloadCurrentConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadManifest">
+      <soap:operation soapAction="http://tempuri.org/IPicoDelta/UploadManifest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PicoDelta">
+    <wsdl:port name="BasicHttpBinding_IPicoDelta" binding="tns:BasicHttpBinding_IPicoDelta">
+      <soap:address location="http://localhost/PicoDeltaSilverlightClient.Web/PicoDelta.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

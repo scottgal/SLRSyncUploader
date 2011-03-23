@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3b9201b2-4d52-4325-a301-0602a8db75d1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/PicoDeltaSilverlightClient.Web/PicoDelta.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PicoDelta.xsd" MetadataType="Schema" ID="8609d1f3-589e-4851-a8a6-6b5ea068bb9c" SourceId="1" SourceUrl="http://localhost/PicoDeltaSilverlightClient.Web/PicoDelta.svc?xsd=xsd3" />
+    <MetadataFile FileName="PicoDelta1.xsd" MetadataType="Schema" ID="ab4f3776-6c2c-40ae-9ff8-c702a560f51a" SourceId="1" SourceUrl="http://localhost/PicoDeltaSilverlightClient.Web/PicoDelta.svc?xsd=xsd2" />
+    <MetadataFile FileName="PicoDelta2.xsd" MetadataType="Schema" ID="afd65626-8bca-40a5-8f68-3179ed8e49e6" SourceId="1" SourceUrl="http://localhost/PicoDeltaSilverlightClient.Web/PicoDelta.svc?xsd=xsd1" />
+    <MetadataFile FileName="PicoDelta3.xsd" MetadataType="Schema" ID="9bfd537c-062f-4754-aed5-848f3ad89409" SourceId="1" SourceUrl="http://localhost/PicoDeltaSilverlightClient.Web/PicoDelta.svc?xsd=xsd0" />
+    <MetadataFile FileName="PicoDelta.wsdl" MetadataType="Wsdl" ID="2c099bf5-cc4a-416c-a561-c7edd5e359e2" SourceId="1" SourceUrl="http://localhost/PicoDeltaSilverlightClient.Web/PicoDelta.svc?wsdl" />
+    <MetadataFile FileName="PicoDelta.disco" MetadataType="Disco" ID="53abd950-0c1a-4c90-96b4-5385f6412a31" SourceId="1" SourceUrl="http://localhost/PicoDeltaSilverlightClient.Web/PicoDelta.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
