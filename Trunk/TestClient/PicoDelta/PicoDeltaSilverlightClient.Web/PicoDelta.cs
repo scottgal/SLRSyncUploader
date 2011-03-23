@@ -15,7 +15,7 @@ namespace PicoDeltaSilverlightClient.Web
     {
 
      
-        public ConcurrentDictionary<long, FileHash> GetHashesForFile()
+        public void GetHashesForFile()
         {
             var fileProcessor = new FileProcessor();
             var config = new Config();
@@ -37,7 +37,7 @@ namespace PicoDeltaSilverlightClient.Web
                         binaryFormatter.Deserialize(new MemoryStream(fileSignature.Signature));
 
 
-                    return fileHashes;
+                    //return fileHashes;
                 }
 
                 fileHashes = fileProcessor.GetHashesForFile(filePath, config);
@@ -47,7 +47,7 @@ namespace PicoDeltaSilverlightClient.Web
                 ds.FileSignatures.AddObject(new FileSignature()
                                                 {FileId = Guid.NewGuid(), FilePath = filePath, Signature = ms.ToArray()});
                 ds.SaveChanges();
-                return fileHashes;
+                //return fileHashes;
             }
             
             
@@ -56,6 +56,18 @@ namespace PicoDeltaSilverlightClient.Web
             
         }
 
+
+
+
+        public void UploadCurrentConfig(Config config, Guid sessionId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void GetHashesForFile(Guid sessionId)
+        {
+            throw new NotImplementedException();
+        }
 
         public ScanProgress GetProgress(Guid sessionId)
         {
@@ -67,7 +79,7 @@ namespace PicoDeltaSilverlightClient.Web
             return new Config();
         }
 
-        public void UploadManifest()
+        public void UploadManifest(Manifest manifest)
         {
             throw new NotImplementedException();
         }

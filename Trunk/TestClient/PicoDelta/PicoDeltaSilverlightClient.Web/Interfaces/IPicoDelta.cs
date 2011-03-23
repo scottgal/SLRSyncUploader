@@ -13,8 +13,18 @@ namespace PicoDeltaSilverlightClient.Web.Interfaces
     [ServiceContract]
     public interface IPicoDelta
     {
+        [OperationContract(IsOneWay = true)]
+        void CalculateHashesForFile();
+
         [OperationContract]
-        ConcurrentDictionary<long, FileHash> GetHashesForFile();
+        void UploadCurrentConfig(Config config);
+
+        [OperationContract]
+        void GetHashesForFile(Guid sessionId);
+
+
+        [OperationContract]
+        ScanProgress GetProgress(Guid sessionId);
 
         [OperationContract]
         Config DownloadCurrentConfig();
