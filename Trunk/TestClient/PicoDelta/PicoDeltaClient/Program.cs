@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using HashEngine;
+using PicoDeltaSl;
 
 namespace PicoDeltaClient
 {
@@ -10,17 +10,24 @@ namespace PicoDeltaClient
     {
         static void Main(string[] args)
         {
-            
+
+            var fileProcessor = new FileProcessor();
             var filePath = args[0];
             var config = new Config();
-            var outDict = FileProcessor.GetHashesForFile(filePath, config);
-           var sortedDict = outDict.Select(x => x).OrderBy(x => x.Value.Offset).AsParallel();
+            var sortedDict = fileProcessor.GetHashesForFile(filePath, config);
            foreach (var entry in sortedDict)
             {
                 Console.WriteLine("{0}:{1}:{2}:{3}", entry.Value.Offset, entry.Key, Convert.ToBase64String(entry.Value.StrongHash) , entry.Value.Length);
             }
+            Console.Clear();
+
+            //var comparisonFile = fileProcessor.GetDiffBlocksForFile(sortedDict, args[1], config);
+
+           
 
             Console.WriteLine("Returned: {0} hashes", sortedDict.Count());
+
+            //Console.WriteLine(comparisonFile.Count);
             Console.ReadKey();
         }
     }

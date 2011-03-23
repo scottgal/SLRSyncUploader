@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace HashEngine
+﻿namespace PicoDeltaSl
 {
-    public class FileChunk
+    public class FileBlock
     {
         public bool IsMatch
         {
@@ -21,7 +16,7 @@ namespace HashEngine
             get; set;
         }
 
-        public byte[] Content
+        public long BlockLength
         {
             get; set;
         }

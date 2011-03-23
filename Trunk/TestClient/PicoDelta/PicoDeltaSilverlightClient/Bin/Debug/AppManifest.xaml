@@ -1,0 +1,12 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="PicoDeltaSilverlightClient" EntryPointType="PicoDeltaSilverlightClient.App" RuntimeVersion="4.0.50826.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="PicoDeltaSilverlightClient" Source="PicoDeltaSilverlightClient.dll" />
+    <AssemblyPart x:Name="DevExpress.Data.v10.1" Source="DevExpress.Data.v10.1.dll" />
+    <AssemblyPart x:Name="DevExpress.Xpf.Controls.v10.1" Source="DevExpress.Xpf.Controls.v10.1.dll" />
+    <AssemblyPart x:Name="DevExpress.Xpf.Core.v10.1" Source="DevExpress.Xpf.Core.v10.1.dll" />
+    <AssemblyPart x:Name="PicoDeltaSl" Source="PicoDeltaSl.dll" />
+    <AssemblyPart x:Name="System.Threading.Tasks" Source="System.Threading.Tasks.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.DataAnnotations" Source="System.ComponentModel.DataAnnotations.dll" />
+  </Deployment.Parts>
+</Deployment>

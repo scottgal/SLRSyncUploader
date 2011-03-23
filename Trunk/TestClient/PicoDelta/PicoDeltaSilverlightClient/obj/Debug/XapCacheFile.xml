@@ -1,0 +1,11 @@
+﻿<xapCache source="O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSilverlightClient\Bin\Debug\PicoDeltaSilverlightClient.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="3/23/2011 4:20:44 PM">
+  <file source="O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSilverlightClient\obj\Debug\PicoDeltaSilverlightClient.dll" archivePath="PicoDeltaSilverlightClient.dll" lastWriteTime="3/23/2011 4:20:42 PM" />
+  <file source="C:\Program Files (x86)\DevExpress 2010.1\Components\Bin\Silverlight\DevExpress.Data.v10.1.dll" archivePath="DevExpress.Data.v10.1.dll" lastWriteTime="8/12/2010 9:54:11 AM" />
+  <file source="C:\Program Files (x86)\DevExpress 2010.1\Components\Bin\Silverlight\DevExpress.Xpf.Controls.v10.1.dll" archivePath="DevExpress.Xpf.Controls.v10.1.dll" lastWriteTime="8/12/2010 10:00:37 AM" />
+  <file source="C:\Program Files (x86)\DevExpress 2010.1\Components\Bin\Silverlight\DevExpress.Xpf.Core.v10.1.dll" archivePath="DevExpress.Xpf.Core.v10.1.dll" lastWriteTime="8/12/2010 10:00:17 AM" />
+  <file source="O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSl\Bin\Debug\PicoDeltaSl.dll" archivePath="PicoDeltaSl.dll" lastWriteTime="3/23/2011 4:20:41 PM" />
+  <file source="O:\Projects\SLRSyncUploader\Trunk\libs\System.Threading.Tasks.dll" archivePath="System.Threading.Tasks.dll" lastWriteTime="2/9/2011 7:43:22 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Xml.Linq.dll" archivePath="System.Xml.Linq.dll" lastWriteTime="8/26/2010 2:17:48 AM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="8/26/2010 2:17:48 AM" />
+  <file source="O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSilverlightClient\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="3/23/2011 2:47:38 PM" />
+</xapCache>

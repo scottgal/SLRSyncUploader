@@ -49,10 +49,10 @@
     <Compile Include="Adler32.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="EngineMode.cs" />
-    <Compile Include="FileChunk.cs" />
+    <Compile Include="FileBlock.cs" />
     <Compile Include="FileHash.cs" />
     <Compile Include="FileProcessor.cs" />
-    <Compile Include="Murmurhash2.cs" />
+    <Compile Include="ProgressReporter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

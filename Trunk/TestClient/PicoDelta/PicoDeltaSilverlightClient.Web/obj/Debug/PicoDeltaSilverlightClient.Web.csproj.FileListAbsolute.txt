@@ -1,0 +1,7 @@
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSilverlightClient.Web\bin\PicoDeltaSilverlightClient.Web.dll
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSilverlightClient.Web\bin\PicoDeltaSilverlightClient.Web.pdb
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSilverlightClient.Web\obj\Debug\ResolveAssemblyReference.cache
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSilverlightClient.Web\obj\Debug\PicoDeltaSilverlightClient.Web.dll
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSilverlightClient.Web\obj\Debug\PicoDeltaSilverlightClient.Web.pdb
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSilverlightClient.Web\bin\PicoDeltaPortable.dll
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSilverlightClient.Web\bin\PicoDeltaPortable.pdb

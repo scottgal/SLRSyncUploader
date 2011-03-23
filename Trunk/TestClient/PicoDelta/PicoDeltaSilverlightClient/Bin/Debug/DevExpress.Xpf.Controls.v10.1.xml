@@ -1,0 +1,1151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Xpf.Controls.v10.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Xpf.Controls.ItemInfo">
+
+            <summary>
+                <para>Provides data related to the <b>UploadControl</b> item.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.ItemInfo.#ctor(System.String,System.IO.Stream)">
+            <summary>
+                <para>Initializes a new instance of the ItemInfo class.
+</para>
+            </summary>
+            <param name="name">
+		A string representing the name of the corresponding file. This value is assigned to the <see cref="P:DevExpress.Xpf.Controls.ItemInfo.Name"/> property.
+
+            </param>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object representing the corresponding file. This value is assigned to the <see cref="P:DevExpress.Xpf.Controls.ItemInfo.Stream"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.ItemInfo.Name">
+            <summary>
+                <para>Gets the name of the corresponding file.
+</para>
+            </summary>
+            <value>A string that represents the name of the corresponding file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.ItemInfo.Size">
+            <summary>
+                <para>Gets the size of the corresponding file.
+</para>
+            </summary>
+            <value>An integer value that specifies the size of the corresponding file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.ItemInfo.State">
+            <summary>
+                <para>Gets the upload state of the item.
+</para>
+            </summary>
+            <value>One of the <b>DevExpress.Xpf.Controls.UploadDataState</b> enumeration members, representing the upload state of the item.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.ItemInfo.Stream">
+            <summary>
+                <para>Gets a stream that represent the content of the corresponding file.
+</para>
+            </summary>
+            <value>A <see cref="T:System.IO.Stream"/> object that represents the content of the corresponding file.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.ItemInfo.ToString">
+            <summary>
+                <para>Returns a human-readable string that represents the item.
+</para>
+            </summary>
+            <returns>A string that specifies the human-readable representation of the item.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.Controls.ReflectionDirection">
+
+            <summary>
+                <para>Lists values that specify the direction of the reflection.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.ReflectionDirection.Down">
+            <summary>
+                <para>The reflection is directed downwards.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.ReflectionDirection.Left">
+            <summary>
+                <para>The reflection is directed to the left.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.ReflectionDirection.Right">
+            <summary>
+                <para>The reflection is directed to the right.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.ReflectionDirection.Up">
+            <summary>
+                <para>The reflection is directed upwards.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.Controls.Book">
+
+            <summary>
+                <para>Represents a book control. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.Book.#ctor">
+            <summary>
+                <para>Initializes a new instance of the Book class. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.Book.ActiveAreaSize">
+            <summary>
+                <para>Gets or sets the size of the active area within a page. This is a dependency property. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Size"/> structure that represents the size of the active area within a page. 
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.Book.ActiveAreaSizeProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.Book.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback,System.Boolean)">
+            <summary>
+                <para>Adds the specified service to the service container. 
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to add. 
+
+            </param>
+            <param name="callback">
+		A callback object that is used to create the service. This allows a service to be declared as available, but delays the creation of the object until the service is requested.
+
+            </param>
+            <param name="promote">
+		<b>true</b> to promote this request to any parent service containers; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.Book.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback)">
+            <summary>
+                <para>Adds the specified service to the service container. 
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to add.
+
+            </param>
+            <param name="callback">
+		A callback object that is used to create the service. This allows a service to be declared as available, but delays the creation of the object until the service is requested.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.Book.AddService(System.Type,System.Object)">
+            <summary>
+                <para>Adds the specified service to the service container. 
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to add. 
+
+            </param>
+            <param name="serviceInstance">
+		An instance of the service type to add. This object must implement or inherit from the type indicated by the <i>serviceType</i> parameter.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.Book.AddService(System.Type,System.Object,System.Boolean)">
+            <summary>
+                <para>Adds the specified service to the service container.
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to add.
+
+            </param>
+            <param name="serviceInstance">
+		An instance of the service type to add. This object must implement or inherit from the type indicated by the <i>serviceType</i> parameter.
+
+            </param>
+            <param name="promote">
+		<b>true</b> to promote this request to any parent service containers; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.Book.AnimationRate">
+            <summary>
+                <para>Gets or sets the animation rate. This is a dependency property.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value that specifies the animation rate. 
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.Book.AnimationRateProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.Book.AnimationSpeed">
+            <summary>
+                <para>Gets or sets the speed the page animation is played. This is a dependency property. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value that specifies the speed the short animation is played, in pixels per second. 
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.Book.AnimationSpeedProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.Book.DataSource">
+            <summary>
+                <para>Gets or sets the Book control's data source. This is a dependency property.
+</para>
+            </summary>
+            <value>An object that contains data displayed within the Book control.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.Book.DataSourceProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.Book.FirstPage">
+            <summary>
+                <para>Gets or sets whether the first page is displayed on the left side of the book.
+</para>
+            </summary>
+            <value>One of the <see cref="T:DevExpress.Xpf.Controls.PageType"/> enumeration members that specifies whether the first page is displayed on the left side of the book.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.Book.FirstPageProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.Book.GetService(System.Type)">
+            <summary>
+                <para>Gets the service object of the specified type.
+</para>
+            </summary>
+            <param name="serviceType">
+		An object that specifies the type of service object to get.
+
+            </param>
+            <returns>A service object of the specified type. <b>null</b> (<b>Nothing</b> in Visual Basic) if there is no service object of this type. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.Book.OnApplyTemplate">
+            <summary>
+                <para>Called after the template is completely generated, and attached to the visual tree. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.Book.PageCount">
+            <summary>
+                <para>Gets the total number of pages within a book. 
+</para>
+            </summary>
+            <value>An integer value that specifies the total number of pages in a book. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.Book.PageIndex">
+            <summary>
+                <para>Gets or sets the index of the page currently opened. This is a dependency property.
+</para>
+            </summary>
+            <value>An integer value that specifies the index of the current page. <b>-1</b> if the left page corresponds to a cover. 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.Controls.Book.PageIndexChanged">
+            <summary>
+                <para>Occurs after a new page has been opened. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.Controls.Book.PageIndexChanging">
+            <summary>
+                <para>Enables cancelling turning the current page. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.Book.PageIndexProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.Book.PageTemplate">
+            <summary>
+                <para>Gets or sets the template that defines the presentation of pages. This is a dependency property.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.DataTemplate"/> object that defines the presentation of pages. 
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.Book.PageTemplateProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.Book.RemoveService(System.Type,System.Boolean)">
+            <summary>
+                <para>Removes the service of the specified type from the service container.
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to remove.
+
+            </param>
+            <param name="promote">
+		<b>true</b> to promote this request to any parent service containers; otherwise, <b>false</b>. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.Book.RemoveService(System.Type)">
+            <summary>
+                <para>Removes the service of the specified type from the service container. 
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to remove.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.Book.ShortAnimationSpeed">
+            <summary>
+                <para>Gets or sets the speed the short animation is played. This is a dependency property.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value that specifies the speed the short animation is played, in pixels per second.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.Book.ShortAnimationSpeedProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.Controls.UploadErrorEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Xpf.Controls.UploadControl.UploadError"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.UploadErrorEventArgs.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the UploadErrorEventArgs class.
+</para>
+            </summary>
+            <param name="message">
+		A <see cref="T:System.String"/> value that specifies the error message. This value is assigned to the <see cref="P:DevExpress.Xpf.Controls.UploadErrorEventArgs.Message"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadErrorEventArgs.Message">
+            <summary>
+                <para>Gets the error message.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value that specifies the error message.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.Controls.UploadItemEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Xpf.Controls.UploadControl.FileUploadCompleted"/> and <see cref="E:DevExpress.Xpf.Controls.UploadControl.UploadItemRemoved"/> events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.UploadItemEventArgs.#ctor(DevExpress.Xpf.Controls.ItemInfo)">
+            <summary>
+                <para>Initializes a new instance of the UploadItemEventArgs class.
+</para>
+            </summary>
+            <param name="itemInfo">
+		An <see cref="T:DevExpress.Xpf.Controls.ItemInfo"/> object representing data related to the tab item. This value is assigned to the <see cref="P:DevExpress.Xpf.Controls.UploadItemEventArgs.ItemInfo"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadItemEventArgs.ItemInfo">
+            <summary>
+                <para>Gets data related to the tab item.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Xpf.Controls.ItemInfo"/> object representing data, related to the tab item.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.Controls.MirrorControl">
+
+            <summary>
+                <para>Represents a <b>MirrorControl</b>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.MirrorControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MirrorControl with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.MirrorControl.ContentProjection">
+            <summary>
+                <para>Gets or sets the perspective transformation parameters, used to transform the MirrorControl's content and reflection. This is a dependency property.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Media.Projection"/> object representing the perspective transformation parameters.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.MirrorControl.ContentProjectionProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.MirrorControl.OnApplyTemplate">
+            <summary>
+                <para>Called after the template is completely generated, and attached to the visual tree.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.MirrorControl.ReflectionDirection">
+            <summary>
+                <para>Gets or sets the direction of the mirror reflection. This is a dependency property.
+</para>
+            </summary>
+            <value>One of the <see cref="T:DevExpress.Xpf.Controls.ReflectionDirection"/> enumeration members that specifies the direction of the mirror reflection.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.MirrorControl.ReflectionDirectionProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.MirrorControl.ReflectionEffect">
+            <summary>
+                <para>Gets or sets a bitmap effect applied to the reflection. This is a dependency property.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Media.Effects.Effect"/> object representing the bitmap effect.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.MirrorControl.ReflectionEffectProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.MirrorControl.ReflectionOpacityMask">
+            <summary>
+                <para>Gets or sets an opacity mask applied to the reflection. This is a dependency property.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Media.Brush"/> object representing the opacity mask.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.MirrorControl.ReflectionOpacityMaskProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.Controls.UploadControl">
+
+            <summary>
+                <para>Represents the <b>UploadControl</b>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.UploadControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the UploadControl class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.UploadControl.AddFile(System.String,System.IO.Stream)">
+            <summary>
+                <para>Adds a new item, representing the specified file, to the <b>Items</b> collection.
+</para>
+            </summary>
+            <param name="fileName">
+		A string that specifies the name of the file, which should be represented by the new item. 
+
+            </param>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object that represents the file which should be represented by the new item. 
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadControl.DataTransferRate">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value>@nbsp;
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.DataTransferRateProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.DefaultFileNameFilter">
+            <summary>
+                <para><para>Specifies the default string, used to filter names of the files in the file open dialog. The actual filter string is specified by the <see cref="P:DevExpress.Xpf.Controls.UploadControl.FileNameFilter"/> property.</para>
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.DefaultMaxFileCount">
+            <summary>
+                <para><para>Specifies the default maximum allowed number of files contained in the <b>UploadControl</b>. The actual maximum allowed number of files is specified by the <see cref="P:DevExpress.Xpf.Controls.UploadControl.MaxFileCount"/> property.</para>
+
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.DefaultMaxFileSize">
+            <summary>
+                <para><para>Specifies the default maximum allowed size of a single file. The actual maximum allowed size is specified by the <see cref="P:DevExpress.Xpf.Controls.UploadControl.MaxFileSize"/> property.</para>
+
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.DefaultMaxUploadSize">
+            <summary>
+                <para><para>Specifies the default maximum allowed total size of files in the <b>UploadControl</b>'s items collection. The actual maximum allowed size is specified by the <see cref="P:DevExpress.Xpf.Controls.UploadControl.MaxUploadSize"/> property.</para>
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.DefaultPackageSize">
+            <summary>
+                <para><para>Specifies the default size of a package. The actual size of a package is specified via the <see cref="P:DevExpress.Xpf.Controls.UploadControl.PackageSize"/> property.</para>
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.DefaultUploadServerPath">
+            <summary>
+                <para><para>Specifies the default path on the server where the uploaded files should be saved. The actual path is specified by the <see cref="P:DevExpress.Xpf.Controls.UploadControl.UploadServerPath"/> property.</para>
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.DefaultWebHandlerUri">
+            <summary>
+                <para><para>Specifies the default URI of the <b>UploadControl</b>'s server part. The actual URI is specified via the <see cref="P:DevExpress.Xpf.Controls.UploadControl.WebHandlerUri"/> property.</para>
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadControl.FileNameFilter">
+            <summary>
+                <para>Gets or sets a string, used to filter file names in the file open dialog. This is a dependency property.
+</para>
+            </summary>
+            <value>A string representing the file name filter.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.FileNameFilterProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.Controls.UploadControl.FileUploadCompleted">
+            <summary>
+                <para>Occurs after a single file has been uploaded.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadControl.IsAddAllowed">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value>@nbsp;
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.IsAddAllowedProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadControl.IsAutomaticUpload">
+            <summary>
+                <para>Gets or sets whether the UploadControl starts uploading a file automatically after it has been added. This is a dependency property.
+
+</para>
+            </summary>
+            <value><b>true</b> to upload the file automatically; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.IsAutomaticUploadProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadControl.IsUploadAllowed">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+
+</para>
+            </summary>
+            <value>@nbsp;
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.IsUploadAllowedProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadControl.IsUploadCancelAllowed">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value>@nbsp;
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.IsUploadCancelAllowedProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadControl.MaxFileCount">
+            <summary>
+                <para>Gets or sets the maximum allowed number of files in the <b>UploadControl</b>'s items collection. This is a dependency property.
+
+</para>
+            </summary>
+            <value>An integer value that specifies the maximum allowed number of files.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.MaxFileCountProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadControl.MaxFileSize">
+            <summary>
+                <para>Gets or sets the maximum allowed size of a single file. This is a dependency property.
+
+</para>
+            </summary>
+            <value>An integer value that specifies the maximum allowed size of a single file, in bytes.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.MaxFileSizeProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadControl.MaxUploadSize">
+            <summary>
+                <para>Gets or sets the maximum allowed total size of files in the <b>UploadControl</b>'s items collection. This is a dependency property.
+
+</para>
+            </summary>
+            <value>An integer value that specifies the maximum allowed total size of files, in bytes.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.MaxUploadSizeProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.UploadControl.OnApplyTemplate">
+            <summary>
+                <para>Called when a template is applied to the control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadControl.PackageSize">
+            <summary>
+                <para>Gets or sets the size of a single package. This is a dependency property.
+
+</para>
+            </summary>
+            <value>An integer value that specifies the size of a package, in bytes.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.PackageSizeProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.UploadControl.PauseUpload">
+            <summary>
+                <para>Pauses the upload.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.UploadControl.ResumeUpload">
+            <summary>
+                <para>Resumes the upload.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.UploadControl.SetUploadItemEffect(DevExpress.Xpf.Controls.ItemInfo,System.Windows.Media.Effects.Effect)">
+            <summary>
+                <para>Sets a bitmap effect for the preview image displayed within the specified item.
+</para>
+            </summary>
+            <param name="itemInfo">
+		A <see cref="T:DevExpress.Xpf.Controls.ItemInfo"/> object representing the <b>UploadControl</b> item.
+
+            </param>
+            <param name="effect">
+		A <see cref="T:System.Windows.Media.Effects.Effect"/> object representing the bitmap effect.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadControl.ShowDataTransferRate">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value>@nbsp;
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.ShowDataTransferRateProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.UploadControl.ShowPreviewImage(DevExpress.Xpf.Controls.ItemInfo,System.Windows.Media.ImageSource)">
+            <summary>
+                <para>Shows the preview image within the specified item.
+</para>
+            </summary>
+            <param name="itemInfo">
+		A <see cref="T:DevExpress.Xpf.Controls.ItemInfo"/> object representing the <b>UploadControl</b> item.
+
+            </param>
+            <param name="source">
+		A <see cref="T:System.Windows.Media.ImageSource"/> object representing the preview image.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadControl.ShowTotalUploadProgress">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value>@nbsp;
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.ShowTotalUploadProgressProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.UploadControl.StartUpload">
+            <summary>
+                <para>Starts the upload.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.UploadControl.StopUpload">
+            <summary>
+                <para>Stops the upload.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.Controls.UploadControl.TotalUploadCompleted">
+            <summary>
+                <para>Occurs after all files have been uploaded.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.Controls.UploadControl.UploadCancelled">
+            <summary>
+                <para>Occurs after the upload has been cancelled.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.Controls.UploadControl.UploadError">
+            <summary>
+                <para>Raised when an error occurs.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.Controls.UploadControl.UploadItemRemoved">
+            <summary>
+                <para>Occurs after an upload item has been removed from the <b>UploadControl</b>.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadControl.UploadServerPath">
+            <summary>
+                <para>Gets or sets a target path on the server where the files should be saved. This is a dependency property.
+
+</para>
+            </summary>
+            <value>A string that represents the path on the server where the files should be saved.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.UploadServerPathProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.UploadControl.WebHandlerUri">
+            <summary>
+                <para>Gets or sets the URI of the <b>UploadControl</b>'s server part. This is a dependency property.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Uri"/> object representing the <b>UploadControl</b>'s server URI.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Controls.UploadControl.WebHandlerUriProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.Controls.PageIndexChangingEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.Xpf.Controls.Book.PageIndexChanging"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.PageIndexChangingEventHandler.Invoke(System.Object,DevExpress.Xpf.Controls.PageIndexChangingEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.Xpf.Controls.Book.PageIndexChanging"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		An object representing the event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.Xpf.Controls.PageIndexChangingEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.Controls.PageIndexChangingEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Xpf.Controls.Book.PageIndexChanging"/> event.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.Controls.PageIndexChangingEventArgs.#ctor(System.Int32,System.Int32)">
+            <summary>
+                <para>Initializes a new instance of the PageIndexChangingEventArgs class.
+</para>
+            </summary>
+            <param name="oldValue">
+		An integer value that specifies the index of the previous page. This value is assigned to the <see cref="P:DevExpress.Xpf.Controls.PageIndexChangingEventArgs.OldPageIndex"/> property.
+
+            </param>
+            <param name="newValue">
+		An integer value that specifies the index of the current page. This value is assigned to the <see cref="P:DevExpress.Xpf.Controls.PageIndexChangingEventArgs.NewPageIndex"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.PageIndexChangingEventArgs.NewPageIndex">
+            <summary>
+                <para>Gets or sets the index of the current page.
+</para>
+            </summary>
+            <value>An integer value that specifies the index of the current page.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.Controls.PageIndexChangingEventArgs.OldPageIndex">
+            <summary>
+                <para>Gets the index of the previous page.
+</para>
+            </summary>
+            <value>An integer value that specifies the index of the previous page.
+</value>
+
+
+        </member>
+    </members>
+</doc>

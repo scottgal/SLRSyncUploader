@@ -1,0 +1,6 @@
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSl\obj\Debug\ResolveAssemblyReference.cache
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSl\Bin\Debug\PicoDeltaSl.dll
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSl\Bin\Debug\PicoDeltaSl.pdb
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSl\Bin\Debug\System.Threading.Tasks.dll
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSl\obj\Debug\PicoDeltaSl.dll
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaSl\obj\Debug\PicoDeltaSl.pdb

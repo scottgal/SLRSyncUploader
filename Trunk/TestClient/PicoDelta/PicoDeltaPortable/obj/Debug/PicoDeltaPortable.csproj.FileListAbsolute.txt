@@ -1,0 +1,5 @@
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaPortable\bin\Debug\PicoDeltaPortable.dll
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaPortable\bin\Debug\PicoDeltaPortable.pdb
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaPortable\obj\Debug\ResolveAssemblyReference.cache
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaPortable\obj\Debug\PicoDeltaPortable.dll
+O:\Projects\SLRSyncUploader\Trunk\TestClient\PicoDelta\PicoDeltaPortable\obj\Debug\PicoDeltaPortable.pdb
