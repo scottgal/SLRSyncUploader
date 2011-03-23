@@ -64,6 +64,8 @@
     <Reference Include="DevExpress.Xpf.Controls.v10.1, Version=10.1.6.5, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Xpf.Core.v10.1, Version=10.1.6.5, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="mscorlib" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Threading.Tasks">
       <HintPath>..\..\..\libs\System.Threading.Tasks.dll</HintPath>
     </Reference>
@@ -82,6 +84,11 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\PicoDeltaService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -95,12 +102,49 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\DataSources\PicoDeltaSl.Config.datasource" />
+    <None Include="Properties\DataSources\PicoDeltaSl.FileHash.datasource" />
+    <None Include="Service References\PicoDeltaService\PicoDelta.wsdl" />
+    <None Include="Service References\PicoDeltaService\PicoDelta.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PicoDeltaService\PicoDelta1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PicoDeltaService\PicoDelta2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PicoDeltaService\PicoDelta3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="ServiceReferences.ClientConfig" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PicoDeltaSl\PicoDeltaSl.csproj">
       <Project>{AFD6B648-F88C-4CF0-980F-9A34AE87CCA4}</Project>
       <Name>PicoDeltaSl</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\PicoDeltaService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PicoDeltaService\PicoDelta.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PicoDeltaService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PicoDeltaService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PicoDeltaService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

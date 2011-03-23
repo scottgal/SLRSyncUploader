@@ -27,43 +27,28 @@ namespace PicoDeltaSilverlightClient
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            var fd = new OpenFileDialog();
-
-
-            bool? userClickedOK = fd.ShowDialog();
-
-            if (userClickedOK == true)
-            {
-
+            
                 diagnosticOutputBlock.Text = "Starting file scan...";
 
-                var fileProcessor = new FileProcessor();
-                var config = new Config();
+                var picoDeltaClient = new PicoDeltaService.PicoDeltaClient("BasicHttpBinding_IPicoDelta");
+     
 
-                var stream = fd.File.OpenRead();
-
-                var bw = new BackgroundWorker();
-                bw.DoWork += (backgroundSender, args) => args.Result = fileProcessor.GetHashesForFile(stream, config);
+                picoDeltaClient.GetHashesForFileAsync();
 
 
-                bw.RunWorkerCompleted += (backgroundSender, args) =>
-                                             {
-
-                                                 var result = args.Result as ConcurrentDictionary<long, FileHash>;
-
-                                                 if (result != null)
-                                                 {
-                                                     diagnosticOutputBlock.Text = result.Count + Environment.NewLine;
-                                                 }
-
-                                             };
-
-                bw.RunWorkerAsync();
+                picoDeltaClient.GetHashesForFileCompleted +=picoDeltaClient_GetHashesForFileCompleted;
+                
+  
 
 
 
 
-            }
+            
+        }
+
+        void picoDeltaClient_GetHashesForFileCompleted(object sender, PicoDeltaService.GetHashesForFileCompletedEventArgs e)
+        {
+            diagnosticOutputBlock.Text += e.Result.Count;
         }
     }
 }

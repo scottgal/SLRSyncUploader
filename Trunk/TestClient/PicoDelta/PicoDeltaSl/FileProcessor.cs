@@ -199,6 +199,13 @@ namespace PicoDeltaSl
             fileStream.Read(outArray, 0, outArray.Length);
             return outArray;
         }
+          public  ConcurrentDictionary<long, FileHash> GetHashesForFile(string filepath, Config config)
+          {
+              using (var fileStream = File.Open(filepath, FileMode.Open, FileAccess.Read, FileShare.Read))
+              {
+                  return GetHashesForFile(fileStream, config);
+              }
+          }
 
         public  ConcurrentDictionary<long, FileHash> GetHashesForFile(FileStream file, Config config)
         {

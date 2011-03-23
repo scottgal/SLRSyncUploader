@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{30B4FC0B-D7A7-4871-8CC8-898DCD877304}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicoDeltaSilverlightClient", "PicoDeltaSilverlightClient\PicoDeltaSilverlightClient.csproj", "{F4E00B72-09DA-46BA-80E7-6479268DA388}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4750A90F-FA99-44F7-9659-AE36A3DB77CD} = {4750A90F-FA99-44F7-9659-AE36A3DB77CD}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicoDeltaSilverlightClient.Web", "PicoDeltaSilverlightClient.Web\PicoDeltaSilverlightClient.Web.csproj", "{4750A90F-FA99-44F7-9659-AE36A3DB77CD}"
 EndProject
