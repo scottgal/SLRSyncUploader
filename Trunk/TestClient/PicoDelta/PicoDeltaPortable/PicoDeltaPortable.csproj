@@ -58,6 +58,9 @@
     <Compile Include="..\PicoDeltaSl\FileProcessor.cs">
       <Link>FileProcessor.cs</Link>
     </Compile>
+    <Compile Include="..\PicoDeltaSl\Manifest.cs">
+      <Link>Manifest.cs</Link>
+    </Compile>
     <Compile Include="..\PicoDeltaSl\ProgressReporter.cs">
       <Link>ProgressReporter.cs</Link>
     </Compile>

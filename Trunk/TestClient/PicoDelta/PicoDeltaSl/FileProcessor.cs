@@ -11,8 +11,8 @@ namespace PicoDeltaSl
 {
     public class FileProcessor
     {
-        public event ProgressChangedDelegate ProgressChanged;
-        public delegate void  ProgressChangedDelegate(int chunkCount, int percentProgress);
+        public event DiffBlockScanProgressChangedDelegate DiffBlockScanProgressChanged;
+        public delegate void  DiffBlockScanProgressChangedDelegate(int chunkCount, int percentProgress);
 
 
 
@@ -171,8 +171,8 @@ namespace PicoDeltaSl
                     long offset = chunkBufferReadOffset;
                     progressReporter.ReportProgress(()=>
                                                          {
-                                                             if (ProgressChanged != null)
-                                                                 ProgressChanged(blockNumber,
+                                                             if (DiffBlockScanProgressChanged != null)
+                                                                 DiffBlockScanProgressChanged(blockNumber,
                                                                                  
                                                                                      ((int)
                                                                                       (offset/chunkLength*100)));
@@ -199,15 +199,19 @@ namespace PicoDeltaSl
             fileStream.Read(outArray, 0, outArray.Length);
             return outArray;
         }
-          public  ConcurrentDictionary<long, FileHash> GetHashesForFile(string filepath, Config config)
+        public ConcurrentDictionary<long, FileHash> GetHashesForFile(string filepath, ProgressReporter progressReporter, Config config)
           {
               using (var fileStream = File.Open(filepath, FileMode.Open, FileAccess.Read, FileShare.Read))
               {
-                  return GetHashesForFile(fileStream, config);
+                  return GetHashesForFile(fileStream,progressReporter, config);
               }
           }
 
-        public  ConcurrentDictionary<long, FileHash> GetHashesForFile(FileStream file, Config config)
+
+        public event GetHashesForFileBockCompleteDelegate GetHashesForFileBockComplete;
+        public delegate void GetHashesForFileBockCompleteDelegate(int blockNumber, int blockCount);
+
+          public ConcurrentDictionary<long, FileHash> GetHashesForFile(FileStream file, ProgressReporter progressReporter, Config config)
         {
 
             var resultDictionary = new ConcurrentDictionary<long, FileHash>();
@@ -223,8 +227,14 @@ namespace PicoDeltaSl
 
             long currentFilePosition = 0;
             var bytesToRead = config.BlockLength;
+              var numberOfBlocks = checked((int) fileLength/config.BlockLength);
             var buffer = new byte[bytesToRead];
             var maxTaskCount = config.DegreeOfParalleism * 15;
+
+
+            if (maxTaskCount >= numberOfBlocks)
+                maxTaskCount = numberOfBlocks;
+
             var taskArray = new List<Task>(maxTaskCount);
 
                 while (currentFilePosition < fileLength)
@@ -242,18 +252,33 @@ namespace PicoDeltaSl
                     }
 
                     currentFilePosition = file.Position;
-
+                    var taskCount = 0;
                     if (taskArray.Count <= maxTaskCount)
                     {
+                        taskCount++;
                         byte[] taskBuffer = buffer;
                         int read = bytesToRead;
                         taskArray.Add(Task.Factory.StartNew(() => CalculateHashes(taskBuffer, offSetPosition, read, config))
                                           .ContinueWith(
-                                              outHash => resultDictionary.TryAdd(outHash.Result.WeakHash, outHash.Result)));
+                                              outHash =>
+                                                  {
+                                                      resultDictionary.TryAdd(outHash.Result.WeakHash, outHash.Result);
+
+                                                      progressReporter.ReportProgressAsync(
+                                                          () =>
+                                                              {
+                                                                  if (GetHashesForFileBockComplete != null)
+                                                                      GetHashesForFileBockComplete(taskCount,
+                                                                                                   numberOfBlocks);
+                                                              });
+
+                                                  }));
                     }
                     else
                     {
                         var complete = Task.WaitAny(taskArray.ToArray());
+
+
                         taskArray.RemoveAt(complete);
                     }
                 }

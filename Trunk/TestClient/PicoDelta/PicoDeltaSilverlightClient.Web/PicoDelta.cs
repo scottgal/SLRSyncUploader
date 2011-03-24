@@ -3,6 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using PicoDeltaSilverlightClient.Web.Interfaces;
 using PicoDeltaSl;
@@ -14,46 +15,67 @@ namespace PicoDeltaSilverlightClient.Web
     public class PicoDelta : IPicoDelta 
     {
 
-     
-        public void GetHashesForFile()
+
+        public Guid CalculateHashesForFile(Config config, Guid sessionId)
         {
             var fileProcessor = new FileProcessor();
-            var config = new Config();
             var filePath = @"D:\\Downloads\\en_windows_7_ultimate_rc_x64_dvd_347803.iso";
+ 
+            fileProcessor.GetHashesForFileBockComplete += delegate
+                                                                  {
 
+                                                                      using (var ds = new DataStoreEntities())
+                                                                      {
+                                                                          
+                                                                      }
+                                                                  };
             using (var ds = new DataStoreEntities())
             {
 
                 var fileSignature = ds.FileSignatures.Where(x => x.FilePath == filePath).FirstOrDefault();
-                ConcurrentDictionary<long, FileHash> fileHashes;
 
-                var binaryFormatter = new BinaryFormatter();
+
+
                 if (fileSignature != null)
                 {
+                    return fileSignature.FileId;
 
-
-                    fileHashes =
-                        (ConcurrentDictionary<long, FileHash>)
-                        binaryFormatter.Deserialize(new MemoryStream(fileSignature.Signature));
-
-
-                    //return fileHashes;
                 }
 
-                fileHashes = fileProcessor.GetHashesForFile(filePath, config);
-                var ms = new MemoryStream();
-                binaryFormatter.Serialize(ms, fileHashes);
+                var progressReporter = new ProgressReporter();
 
-                ds.FileSignatures.AddObject(new FileSignature()
-                                                {FileId = Guid.NewGuid(), FilePath = filePath, Signature = ms.ToArray()});
-                ds.SaveChanges();
-                //return fileHashes;
+
+
+                var fileId = Guid.NewGuid();
+               
+                Task.Factory.StartNew(() =>
+                                          {
+
+
+                                              var fileHashes = fileProcessor.GetHashesForFile(filePath, progressReporter,
+                                                                                              config);
+                                              using (var ms = new MemoryStream())
+                                              {
+                                                  var binaryFormatter = new BinaryFormatter();
+                                                  binaryFormatter.Serialize(ms, fileHashes);
+
+
+
+                                                  ds.FileSignatures.AddObject(new FileSignature()
+                                                                                  {
+                                                                                      FileId = fileId,
+                                                                                      FilePath = filePath,
+                                                                                      Signature = ms.ToArray()
+                                                                                  });
+                                              }
+                                              ds.SaveChanges();
+                                          });
+
+
+                return fileId;
+
+
             }
-            
-            
-          
-            
-            
         }
 
 
@@ -65,8 +87,11 @@ namespace PicoDeltaSilverlightClient.Web
         }
 
         public void GetHashesForFile(Guid sessionId)
-        {
-            throw new NotImplementedException();
+        { 
+            fileHashes =
+                        (ConcurrentDictionary<long, FileHash>)
+                        binaryFormatter.Deserialize(new MemoryStream(fileSignature.Signature));
+NotImplementedException();
         }
 
         public ScanProgress GetProgress(Guid sessionId)
