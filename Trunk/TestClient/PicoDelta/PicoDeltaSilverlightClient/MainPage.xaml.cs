@@ -27,16 +27,19 @@ namespace PicoDeltaSilverlightClient
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            
-                diagnosticOutputBlock.Text = "Starting file scan...";
 
+
+            var ofd = new OpenFileDialog();
+
+            var clicked = ofd.ShowDialog();
+            if (clicked == true)
+            {
+               diagnosticOutputBlock.Text = "Starting remote file scan...";
                 var picoDeltaClient = new PicoDeltaService.PicoDeltaClient("BasicHttpBinding_IPicoDelta");
-     
-
                 picoDeltaClient.GetHashesForFileAsync();
-
-
                 picoDeltaClient.GetHashesForFileCompleted +=picoDeltaClient_GetHashesForFileCompleted;
+            }
+              
                 
   
 
@@ -48,7 +51,19 @@ namespace PicoDeltaSilverlightClient
 
         void picoDeltaClient_GetHashesForFileCompleted(object sender, PicoDeltaService.GetHashesForFileCompletedEventArgs e)
         {
+
+
             diagnosticOutputBlock.Text += e.Result.Count;
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

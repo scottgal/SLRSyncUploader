@@ -16,69 +16,88 @@ namespace PicoDeltaSl
 
 
 
-        public void FileBlocksAssemble(List<FileBlock> files, ConcurrentDictionary<long, FileHash> destinationHashes,  string originalFIleName, string destinationPath)
+        public void FileBlocksAssemble(List<FileChunk> files, ConcurrentDictionary<long, FileHash> destinationHashes,  string originalFileName, string destinationPath)
         { 
-            
+            //really should write this again!
         }
 
         private  CancellationTokenSource _cancellationSource;
-        public  List<FileBlock> GetDiffBlocksForFile(ConcurrentDictionary<long, FileHash> remoteHashes, string filePath, ProgressReporter progressReporter, Config config)
+           public  List<FileChunk> GetDiffBlocksForFile(ConcurrentDictionary<long, FileHash> remoteHashes, FileStream fileStream, ProgressReporter progressReporter, Config config)
+           {
+               _cancellationSource = new CancellationTokenSource();
+               var cancellationToken = _cancellationSource.Token;
+               var fileLength = fileStream.Length;
+
+               var lockObj = new object();
+
+               var fileBlockSize = Convert.ToInt64(fileLength / config.DegreeOfParalleism );
+
+
+               long chunkStart = 0;
+               long chunkEnd = 0;
+               //really should be concurrentbag but SL doesn't support that.
+               var resultBag = new List<FileChunk>();
+        
+
+                   var taskArray = new List<Task>();
+                   var chunkCounter = 0;
+                   for (var i = 0; i < config.DegreeOfParalleism; i++)
+                   {
+                       chunkEnd = chunkEnd + fileBlockSize;
+                       var chunkOverlap = chunkEnd + config.BlockLength;
+
+                       if (chunkEnd > fileLength)
+                       {
+                           chunkEnd = fileLength;
+                           chunkOverlap = chunkEnd;
+                       }
+
+
+                       if (taskArray.Count() <= config.DegreeOfParalleism)
+                       {
+                           chunkCounter++;
+                           var localChunkStart = chunkStart;
+                           var length = chunkOverlap - chunkStart;
+
+                           int counter = chunkCounter;
+                           var chunkScanTask = Task.Factory.StartNew(
+                               () => GetChunksForFileBlock(counter, cancellationToken, remoteHashes, fileStream, localChunkStart, length, progressReporter, config),
+                               cancellationToken, TaskCreationOptions.LongRunning, TaskScheduler.Default)
+                               .ContinueWith(
+                                   outHash =>
+                                       {
+                                           lock (lockObj)
+                                           {
+                                           outHash.Result.ForEach(resultBag.Add);
+                                           }
+                                       });
+
+                           taskArray.Add(chunkScanTask);
+
+                       }
+
+                       Interlocked.Add(ref chunkStart, fileBlockSize);
+
+                   }
+                   Task.WaitAll(taskArray.ToArray());
+               
+               return resultBag;
+           }
+
+
+        public  List<FileChunk> GetDiffBlocksForFile(ConcurrentDictionary<long, FileHash> remoteHashes, string filePath, ProgressReporter progressReporter, Config config)
         {
-            _cancellationSource = new CancellationTokenSource();
-            var cancellationToken = _cancellationSource.Token;
-  
-            var fileInfo = new FileInfo(filePath);
-            var fileChunkSize = Convert.ToInt64(fileInfo.Length / config.DegreeOfParalleism);
-
-
-            long chunkStart = 0;
-            long chunkEnd = 0;
-            var resultBag = new List<FileBlock>();
-            using (var mappedFile =new FileStream(filePath, FileMode.Open,FileAccess.Read,FileShare.Read))
+            using (var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
             {
-
-                var taskArray = new List<Task>();
-                int chunkCounter = 0;
-                for (var i = 0; i < config.DegreeOfParalleism; i++)
-                {
-                    chunkEnd = chunkEnd + fileChunkSize;
-                    var chunkOverlap = chunkEnd;
-                    if (chunkEnd > fileInfo.Length)
-                    {
-                        chunkEnd = fileInfo.Length;
-                        chunkOverlap = chunkEnd;
-                    }
-                    
-
-                    if (taskArray.Count() <= config.DegreeOfParalleism)
-                    {
-                        chunkCounter++;
-                        var localChunkStart = chunkStart;
-                        var length = chunkOverlap - chunkStart;
-                        
-                        int counter = chunkCounter;
-                        var chunkScanTask = Task.Factory.StartNew(
-                            () => GetChunksForFileBlock(counter, cancellationToken, remoteHashes, mappedFile, localChunkStart, length, progressReporter, config),
-                            cancellationToken, TaskCreationOptions.LongRunning, TaskScheduler.Default)
-                            .ContinueWith(
-                                outHash => outHash.Result.ForEach(resultBag.Add));
-
-                        taskArray.Add(chunkScanTask);
-
-                    }
-
-                    Interlocked.Add(ref chunkStart, fileChunkSize);
-
-                }
-                Task.WaitAll(taskArray.ToArray());
+                return GetDiffBlocksForFile(remoteHashes, fileStream, progressReporter, config);
             }
-            return resultBag;
+
         }
 
 
 
 
-        public  List<FileBlock> GetChunksForFileBlock(int blockNumber, CancellationToken cancellationToken, 
+        public  List<FileChunk> GetChunksForFileBlock(int blockNumber, CancellationToken cancellationToken, 
             ConcurrentDictionary<long, FileHash> remoteHashes, FileStream mappedFile, long fileBlockChunkStartOffset, long chunkLength, ProgressReporter progressReporter, Config config)
         {
             
@@ -98,7 +117,7 @@ namespace PicoDeltaSl
 
             var windowWeakChecksum = new Adler32();
 
-            var outList = new List<FileBlock>();
+            var outList = new List<FileChunk>();
             while (chunkReadOffset < chunkLength)
             {
                 if (cancellationToken.IsCancellationRequested)
@@ -142,8 +161,8 @@ namespace PicoDeltaSl
                     {
                         if (chunkBufferReadOffset > 0)
                         {
-                            long nonMatchEndOffset = fileBlockChunkStartOffset - 1;
-                            var nonMatchingChunk = new FileBlock
+                            var nonMatchEndOffset = fileBlockChunkStartOffset - 1;
+                            var nonMatchingChunk = new FileChunk
                                                        {
                                                            IsMatch = false,
                                                            BlockLength = nonMatchEndOffset - nonMatchStartOffset,
@@ -153,7 +172,7 @@ namespace PicoDeltaSl
                             nonMatchStartOffset = chunkBufferReadOffset + config.BlockLength;
                         }
 
-                        var matchingChunk = new FileBlock
+                        var matchingChunk = new FileChunk
                                                 {
                                                     IsMatch = true,
                                                     DestinationOffset = chunkReadOffset,
@@ -185,7 +204,7 @@ namespace PicoDeltaSl
             }
             if (chunkLength - nonMatchStartOffset > 1)
             {
-                var nonMatchingChunk = new FileBlock() { IsMatch = false, BlockLength = chunkLength - nonMatchStartOffset, SourceOffset = nonMatchStartOffset + chunkBufferReadOffset };
+                var nonMatchingChunk = new FileChunk { IsMatch = false, BlockLength = chunkLength - nonMatchStartOffset, SourceOffset = nonMatchStartOffset + chunkBufferReadOffset };
                 outList.Add(nonMatchingChunk);
             }
             return outList;
@@ -199,6 +218,9 @@ namespace PicoDeltaSl
             fileStream.Read(outArray, 0, outArray.Length);
             return outArray;
         }
+
+        public event GetHashesForFileBockCompleteDelegate GetHashesForFileBockComplete;
+        public delegate void GetHashesForFileBockCompleteDelegate(int blockNumber, int blockCount);
         public ConcurrentDictionary<long, FileHash> GetHashesForFile(string filepath, ProgressReporter progressReporter, Config config)
           {
               using (var fileStream = File.Open(filepath, FileMode.Open, FileAccess.Read, FileShare.Read))
@@ -207,9 +229,6 @@ namespace PicoDeltaSl
               }
           }
 
-
-        public event GetHashesForFileBockCompleteDelegate GetHashesForFileBockComplete;
-        public delegate void GetHashesForFileBockCompleteDelegate(int blockNumber, int blockCount);
 
           public ConcurrentDictionary<long, FileHash> GetHashesForFile(FileStream file, ProgressReporter progressReporter, Config config)
         {

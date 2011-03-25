@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web;
 using PicoDeltaSilverlightClient.Web.Interfaces;
 using PicoDeltaSl;
-using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 
 namespace PicoDeltaSilverlightClient.Web
@@ -20,13 +17,27 @@ namespace PicoDeltaSilverlightClient.Web
         {
             var fileProcessor = new FileProcessor();
             var filePath = @"D:\\Downloads\\en_windows_7_ultimate_rc_x64_dvd_347803.iso";
- 
-            fileProcessor.GetHashesForFileBockComplete += delegate
+            var fileId = Guid.NewGuid();
+            fileProcessor.GetHashesForFileBockComplete += delegate(Guid currentFileId)
                                                                   {
 
                                                                       using (var ds = new DataStoreEntities())
                                                                       {
-                                                                          
+                                                                          var statusEntry =
+                                                                              ds.FileStatuses.Where(
+                                                                                  x => x.FileId == fileId)
+                                                                          _.FirstOrDefault;
+
+                                                                          if(statusEntry != null)
+                                                                          {
+                                                                              
+                                                                          }
+
+                                                                          else
+                                                                          {
+                                                                              
+
+                                                                          }
                                                                       }
                                                                   };
             using (var ds = new DataStoreEntities())
@@ -46,7 +57,7 @@ namespace PicoDeltaSilverlightClient.Web
 
 
 
-                var fileId = Guid.NewGuid();
+               
                
                 Task.Factory.StartNew(() =>
                                           {
@@ -83,12 +94,12 @@ namespace PicoDeltaSilverlightClient.Web
 
         public void UploadCurrentConfig(Config config, Guid sessionId)
         {
-            throw new NotImplementedException();
+          
         }
 
         public void GetHashesForFile(Guid sessionId)
         { 
-            fileHashes =
+          var  fileHashes =
                         (ConcurrentDictionary<long, FileHash>)
                         binaryFormatter.Deserialize(new MemoryStream(fileSignature.Signature));
 NotImplementedException();

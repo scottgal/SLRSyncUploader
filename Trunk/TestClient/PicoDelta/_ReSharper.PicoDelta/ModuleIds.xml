@@ -1,5 +1,7 @@
 <Modules>
-  <Module PersistentId="14AE46F8-E4D1-4BB3-83E9-80D4737DA8C5" ModuleId="PicoDeltaClient" />
-  <Module PersistentId="41477258-8867-4D34-8E9F-92FC4EFA9055" ModuleId="HashEngine" />
-  <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="mscorlib" />
+  <Module PersistentId="AFD6B648-F88C-4CF0-980F-9A34AE87CCA4" ModuleId="PicoDeltaSl" />
+  <Module PersistentId="F4E00B72-09DA-46BA-80E7-6479268DA388" ModuleId="PicoDeltaSilverlightClient" />
+  <Module PersistentId="4750A90F-FA99-44F7-9659-AE36A3DB77CD" ModuleId="PicoDeltaSilverlightClient.Web" />
+  <Module PersistentId="BEB0F6B7-DE94-4E15-B8F0-D16C9724456D" ModuleId="PicoDeltaPortable" />
 </Modules>

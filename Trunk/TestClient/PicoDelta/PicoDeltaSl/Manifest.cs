@@ -11,7 +11,7 @@ namespace PicoDeltaSl
             get; set;
         }
 
-        public List<FileBlock> Blocks { get; set;
+        public List<FileChunk> Blocks { get; set;
         }
     }
 }

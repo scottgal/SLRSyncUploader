@@ -61,7 +61,7 @@
     <Compile Include="Adler32.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="EngineMode.cs" />
-    <Compile Include="FileBlock.cs" />
+    <Compile Include="FileChunk.cs" />
     <Compile Include="FileHash.cs" />
     <Compile Include="FileProcessor.cs" />
     <Compile Include="Manifest.cs" />
